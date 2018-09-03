@@ -7,27 +7,21 @@ import { Home } from './components/home/home';
 
 
 
-const About = () => (
+const Oferta = () => (
   <div>
-    
+    Oferta
   </div>
 )
 
-const Code = () => (
+const Portfolio = () => (
   <div>
     Code
   </div>
 )
 
-const Contact = () => (
+const Kontakt = () => (
   <div>
     Contact
-  </div>
-)
-
-const info = () => (
-  <div>
-    info
   </div>
 )
 
@@ -37,17 +31,14 @@ const MainMenu = () => {
       <Link to="/">
         <button>home</button>
       </Link>
-      <Link to="/about">
-        <button>About</button>
+      <Link to="/oferta">
+        <button>Oferta</button>
       </Link>
-      <Link to="/code">
-        <button>code</button>
+      <Link to="/portfolio">
+        <button>Portfolio</button>
       </Link>
-      <Link to="/contact">
-        <button>contact</button>
-      </Link>
-      <Link to="/info">
-        <button>info</button>
+      <Link to="/kontakt">
+        <button>kontakt</button>
       </Link>
     </div>
   );
@@ -65,10 +56,9 @@ class App extends Component {
           </header>
           <div>
             <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/code" component={Code} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/presence" component={info} />
+            <Route exact path="/oferta" component={Oferta} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/kontakt" component={Kontakt} />
           </div>
         </div>
       </Router>

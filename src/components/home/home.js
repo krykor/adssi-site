@@ -1,10 +1,9 @@
 import React from 'react';
 
-import { Offer } from './offer';
+import { HomeOffer } from './home-offer';
 
 export const Home = () => (
     <div>
-      Home test
-      <Offer/>
+      <HomeOffer/>
     </div>
   )
