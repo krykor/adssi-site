@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Button } from '../stateless/button'
 
 export const OfferComponentLeft = (props) => {
     return(
@@ -8,11 +8,7 @@ export const OfferComponentLeft = (props) => {
             <hr className="line-blue"/>
             <p>{props.p1}</p>
             <p className="margin-text-servises">{props.p2}</p>
-            <div className="text-center">
-                <Link to="/oferta">
-                    <button type="button" className="btn btn-primary">Więcej</button>
-                </Link>
-            </div>
+            <Button link="/oferta"/>
         </div>
     )
 }

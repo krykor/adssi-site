@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { OurWorksElement } from './our-works-element'
+import { Button } from '../stateless/button'
+import { SectionHead } from '../stateless/section-head'
 
 export class OurWorks extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            ourWorksHead: {
+                title: 'Nasze prace',
+                text: [
+                    'Za naszymi Klientami zobaczysz projekt, za projektem możliwości - odkryj je wspólnie z nami.',
+                    'Słuchamy, tworzymy oraz wdarżamy unikalne projekty. Bądź z nami w kontakcie!'
+                ]
+            },
             ourWorks: [
                 {
                     id: 'strona-rzeznia',
@@ -62,22 +70,14 @@ export class OurWorks extends Component {
         return (
             <section id="portfolio" className="bg-color-bialy">
             <div className="container">
-                <div className="row">
-                    <div className="col-lg-12 text-center servises">
-                        <h2>Nasze prace</h2>
-                        <hr className="line-blue-cen text-center"></hr>
-                        <p>Za naszymi Klientami zobaczysz projekt, za projektem możliwości - odkryj je wspólnie z nami. </p>
-                        <p>Słuchamy, tworzymy oraz wdarżamy unikalne projekty. Bądź z nami w kontakcie!</p>
-                    </div>
-                </div>
+                <SectionHead 
+                title={this.state.ourWorksHead.title}
+                text={this.state.ourWorksHead.text}/>
+
                 <div className="row">
                     {this.state.ourWorks.map(x => <OurWorksElement title={x.title} key={x.id} client={x.client} category={x.category} src={x.src} imgAlt={x.imgAlt}/>)}
                       
-                    <div className="col-sm-12 text-center">
-                        <Link to="/portfolio"> 
-                            <button type="button" className="btn btn-primary">Więcej</button>
-                        </Link>
-                    </div>
+                    <Button link='/portfolio'/>
                 </div>
             </div>
         </section>
