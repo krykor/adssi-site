@@ -1,13 +1,13 @@
 import React from 'react';
 import { PropTypes } from 'prop-types'
 
-export const SectionHead = ({title, text}) => {
+export const SectionHead = ({title, content}) => {
     return (
         <div className="row">
             <div className="col-lg-12 text-center servises">
                 <h2>{title}</h2>
                 <hr className="line-blue-cen text-center"></hr>
-                {text.map(item => <p>{item}</p>)}
+                {content && content.map(item => <p key={item.id}>{item.text}</p>)}
             </div>
         </div>
     )
@@ -15,6 +15,5 @@ export const SectionHead = ({title, text}) => {
 
 SectionHead.propTypes = {
     title: PropTypes.string.isRequired,
-    textP1: PropTypes.string,
-    textP2: PropTypes.string
+    content: PropTypes.array,
 }

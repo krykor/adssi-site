@@ -9,9 +9,15 @@ export class OurWorks extends Component {
         this.state = {
             ourWorksHead: {
                 title: 'Nasze prace',
-                text: [
-                    'Za naszymi Klientami zobaczysz projekt, za projektem możliwości - odkryj je wspólnie z nami.',
-                    'Słuchamy, tworzymy oraz wdarżamy unikalne projekty. Bądź z nami w kontakcie!'
+                content: [
+                    { 
+                        id: 'ourWorks1',
+                        text: 'Za naszymi Klientami zobaczysz projekt, za projektem możliwości - odkryj je wspólnie z nami.'
+                    },
+                    { 
+                        id: 'ourWorks2', 
+                        text: 'Słuchamy, tworzymy oraz wdarżamy unikalne projekty. Bądź z nami w kontakcie!'
+                    }
                 ]
             },
             ourWorks: [
@@ -72,7 +78,7 @@ export class OurWorks extends Component {
             <div className="container">
                 <SectionHead 
                 title={this.state.ourWorksHead.title}
-                text={this.state.ourWorksHead.text}/>
+                content={this.state.ourWorksHead.content}/>
 
                 <div className="row">
                     {this.state.ourWorks.map(x => <OurWorksElement title={x.title} key={x.id} client={x.client} category={x.category} src={x.src} imgAlt={x.imgAlt}/>)}
