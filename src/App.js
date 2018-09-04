@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Home } from './components/home/home';
+import { MainFooter } from './components/footer/main-footer'
 
 
 
@@ -60,6 +61,9 @@ class App extends Component {
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/kontakt" component={Kontakt} />
           </div>
+          
+          <MainFooter />
+          
         </div>
       </Router>
     );
