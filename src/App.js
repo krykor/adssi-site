@@ -27,7 +27,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <MainNav/>
+            {!Home.state.match.isExact ? <MainNav navClass={`dataSpy="affix"`}/> : <MainNav/>}
           </header>
           <div>
             <Route exact path="/" component={Home} />
