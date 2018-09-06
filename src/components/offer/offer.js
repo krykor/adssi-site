@@ -69,52 +69,28 @@ export class Offer extends Component {
                     btnClass: 'btn-photo'
                 },
             ],
-            ourOfferContainer: [
-                {
-                    name: 'SingleOffer',
-                    propsName: {
-                        ourOffer: '{item}',
-                        key: '{item.id}'
-                    }
-                }
-            ],
         }
     }
     render() {
-        const test = (item) => {
-            return (
-                <Img 
-                    src={item.src} 
-                    key={`${item.id}-img`} 
-                    imgAlt={item.imgAlt} 
-                    imgClass="6"/>
-            )
-        }
-        const test2 = (item) => {
-            return (
-                <SingleOffer 
-                    ourOffer={item} 
-                    key={item.id}/>
-            )
-        }
-        const test3 = (item) => [test(item), test2(item)]
+        const offerArray = (item) => [
+            <SingleOffer 
+                ourOffer={item} 
+                key={item.id}/>, 
+            <Img 
+                src={item.src} 
+                key={`${item.id}-img`} 
+                imgAlt={item.imgAlt} 
+                imgClass="6"/>
+        ]
 
         return (
             <div className="container-fluit">
                 <div className="container oferty-margin">
                     {this.state.ourOffer.map((item, index) => 
-                        index % 2 == 0 ? 
-                            (
-                                <div className={`row oferty ${item.id} sr4`}>
-                                    {test3(item)}
-                                </div>
-                            ) : (
-                                <div className={`row oferty ${item.id} sr4`}>
-                                    {test3(item).reverse().map(x => x)}
-                                </div>
-                            ) 
-                    )}
-                        
+                        <div className={`row oferty ${item.id} sr4`}>
+                            {index % 2 == 0 ? (offerArray(item)) : (offerArray(item).reverse())}
+                        </div>
+                    )}   
                 </div>
             </div>
         )
