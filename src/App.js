@@ -6,9 +6,6 @@ import { Offer } from './components/offer/offer'
 import { MainFooter } from './components/footer/main-footer'
 import { MainNav } from './components/nav/main-nav';
 
-
-
-
 const Portfolio = () => (
   <div>
     Code
@@ -27,8 +24,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            {Home.match != null ? <MainNav navClass=""/> : <MainNav navClass="affix"/>}
-            {/* <MainNav {this.props.match ? navClass="affix" : navClass=""}/> */}
+            <MainNav navClass="affix"/> 
           </header>
           <div>
             <Route exact path="/" component={Home} />
@@ -36,9 +32,7 @@ class App extends Component {
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/kontakt" component={Kontakt} />
           </div>
-          
           <MainFooter />
-          
         </div>
       </Router>
     );

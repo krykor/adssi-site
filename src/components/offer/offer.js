@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import { MainNav } from '../nav/main-nav';
 import { SingleOffer } from './single-offer'
 import { Img } from '../stateless/img'
 
@@ -86,7 +85,6 @@ export class Offer extends Component {
 
         return (
             <div className="container-fluit">
-                <MainNav/>
                 <div className="container oferty-margin">
                     {this.state.ourOffer.map((item, index) => 
                         <div className={`row oferty ${item.id} sr4`} key={`${item.id}-div`}>
