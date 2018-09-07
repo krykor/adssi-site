@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { OurWorksElement } from './our-works-element'
 import { Button } from '../stateless/button'
 import { SectionHead } from '../stateless/section-head'
+import  ourWorksData  from '../../api/ourWorksData.json'
 
 export class OurWorks extends Component {
     constructor(props) {
@@ -19,8 +20,8 @@ export class OurWorks extends Component {
                         text: 'Słuchamy, tworzymy oraz wdarżamy unikalne projekty. Bądź z nami w kontakcie!'
                     }
                 ]
-            },
-            ourWorks: [
+            }, ourWorks: []
+            /* ourWorks: [
                 {
                     id: 'strona-rzeznia',
                     client: 'Restauracja Stara Rzeźnia',
@@ -69,10 +70,21 @@ export class OurWorks extends Component {
                     src: 'http://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia.jpg',
                     imgAlt: 'Profile Social Media Restauracji Stara Rzeźnia'
                 }
-            ],
+            ], */
         }
     }
+    /* componentDidMount() {
+        fetch('_test.json')
+          .then(response => response.json())
+          .then(myJson => console.log(JSON.stringify(myJson)));
+    } */
+    componentDidMount() {
+        this.setState(
+            { ourWorks: ourWorksData } 
+        )
+    }
     render() {
+        console.log(this.state.ourWorks)
         return (
             <section id="portfolio" className="bg-color-bialy">
             <div className="container">
