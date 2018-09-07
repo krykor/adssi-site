@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const MainNav = (props) => {
     return (
-        <nav className="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="10">
+        <nav className="navbar navbar-inverse navbar-fixed-top" data-spy={props.navClass} data-offset-top="10">
             <div className="container">
                 <div className="navbar-header">
                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -12,7 +12,7 @@ export const MainNav = (props) => {
                         <span className="icon-bar"></span>
                     </button>
                     <Link to="/" className="navbar-brand">
-                        <img src="https:adssi.pl/img/loga/slicestrona2.png" height="30px"/>
+                        <img src="https:adssi.pl/img/loga/slicestrona2.png" height="30px" alt="Logo"/>
                     </Link>
                 </div>
                 <div className="collapse navbar-collapse" id="myNavbar">

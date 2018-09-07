@@ -52,7 +52,7 @@ export class Slider extends Component {
                         </div>
                         <div className="item">
                             <SliderElement slide={this.state.slide[1]}/>
-						    <div class="carousel-caption text-right sr111">
+						    <div className="carousel-caption text-right sr111">
                                 <h3 className="text-right">Komuniakcja jest <span className="text-primary">strategią.</span></h3>
                                 <Button link="/kontakt" textAlign="text-right" text="Napisz do nas" buttonClass="btn-slider"/>
                             </div>

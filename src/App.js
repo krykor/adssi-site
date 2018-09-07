@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Home } from './components/home/home';
 import { Offer } from './components/offer/offer'
@@ -27,7 +27,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            {!Home.state.match.isExact ? <MainNav navClass={`dataSpy="affix"`}/> : <MainNav/>}
+            {Home.match != null ? <MainNav navClass=""/> : <MainNav navClass="affix"/>}
+            {/* <MainNav {this.props.match ? navClass="affix" : navClass=""}/> */}
           </header>
           <div>
             <Route exact path="/" component={Home} />
