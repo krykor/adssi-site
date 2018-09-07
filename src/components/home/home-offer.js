@@ -51,9 +51,11 @@ export class HomeOffer extends Component {
             <div className="bg-color-jasny">
                 <div id="uslugi" className="container text-center">
                     <div className="row">
-                        <div className="col-sm-4 text-left">
-                            <OfferComponentLeft title={this.state.offerComponent.title} p1={this.state.offerComponent.p1} p2={this.state.offerComponent.p2}/>
-                        </div>
+                        <OfferComponentLeft 
+                            title={this.state.offerComponent.title} 
+                            p1={this.state.offerComponent.p1} 
+                            p2={this.state.offerComponent.p2}
+                            buttonLink="/oferta"/>
                         <div className="col-sm-7 col-sm-offset-1">
                             <div className="row">
                                 {this.state.offerComponentV1.map(x => <OfferComponent title={x.title} key={x.id} text={x.text} icon={x.icon} divClass={x.divClass}/>)}
