@@ -3,15 +3,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import { Home } from './components/home/home'
 import { Offer } from './components/offer/offer'
+import { Portfolio } from './components/portfolio/portfolio'
 import { Contact } from './components/contact/contact'
 import { MainFooter } from './components/footer/main-footer'
 import { MainNav } from './components/nav/main-nav'
-
-const Portfolio = () => (
-  <div>
-    Code
-  </div>
-)
 
 class App extends Component {
   render() {
@@ -24,7 +19,7 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Home} />
             <Route exact path="/oferta" component={Offer} />
-            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/portfolio" component={Portfolio}/>
             <Route exact path="/kontakt" component={Contact} />
           </div>
           <MainFooter />

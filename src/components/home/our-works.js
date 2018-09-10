@@ -20,57 +20,8 @@ export class OurWorks extends Component {
                         text: 'Słuchamy, tworzymy oraz wdarżamy unikalne projekty. Bądź z nami w kontakcie!'
                     }
                 ]
-            }, ourWorks: []
-            /* ourWorks: [
-                {
-                    id: 'strona-rzeznia',
-                    client: 'Restauracja Stara Rzeźnia',
-                    title: 'STRONA INTERNETOWA',
-                    category: 'webp',
-                    src: 'https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzeznia.jpg',
-                    imgAlt: 'Strona internetowa Restauracji Stara Rzeźnia'
-                },
-                {
-                    id: 'profil-zamkowa',
-                    client: 'Restauracja Zamkowa',
-                    title: 'SOCIAL MEDIA',
-                    category: 'social',
-                    src: 'https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa.jpg',
-                    imgAlt: 'Strona Facebook Restauracji Stara Rzeźnia'
-                },
-                {
-                    id: 'projekt-walentynkowy-zamkowa',
-                    client: 'Restauracja Zamkowa',
-                    title: 'PROJEKT GRAFICZNY',
-                    category: 'graphicd',
-                    src: 'https://adssi.pl/img/portfolio/targi-slubne/targi-slubne.jpg',
-                    imgAlt: 'Projekt walentynkowy'
-                },
-                {
-                    id: 'profil-orell',
-                    client: 'Orell',
-                    title: 'SOCIAL MEDIA',
-                    category: 'social',
-                    src: 'http://adssi.pl/img/portfolio/social/orell/sm-orell.jpg',
-                    imgAlt: 'Profil Orell'
-                },
-                {
-                    id: 'kolacja-degustacyjna',
-                    client: 'Restauracja Stara Rzeźnia',
-                    title: 'PROJEKT GRAFICZNY',
-                    category: 'graphicd',
-                    src: 'http://adssi.pl/img/portfolio/kolacja-degustacyjna/zaproszenie.jpg',
-                    imgAlt: 'Kolacja degustacyja w Restauracji Stara Rzeźnia'
-                },
-                {
-                    id: 'sm-rzeznia',
-                    client: 'Restauracja Stara Rzeźnia',
-                    title: 'SOCIAL MEDIA',
-                    category: 'social',
-                    src: 'http://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia.jpg',
-                    imgAlt: 'Profile Social Media Restauracji Stara Rzeźnia'
-                }
-            ], */
+            }, 
+            ourWorks: []
         }
     }
     /* componentDidMount() {
@@ -84,7 +35,6 @@ export class OurWorks extends Component {
         )
     }
     render() {
-        console.log(this.state.ourWorks)
         return (
             <section id="portfolio" className="bg-color-bialy">
             <div className="container">
@@ -93,7 +43,14 @@ export class OurWorks extends Component {
                 content={this.state.ourWorksHead.content}/>
 
                 <div className="row">
-                    {this.state.ourWorks.map(x => <OurWorksElement title={x.title} key={x.id} client={x.client} category={x.category} src={x.src} imgAlt={x.imgAlt}/>)}
+                    {this.state.ourWorks.map(x => 
+                        <OurWorksElement 
+                            group={x.group} 
+                            key={x.id} 
+                            client={x.client} 
+                            category={x.category} 
+                            src={x.imgSrc} 
+                            imgAlt={x.imgAlt}/>)}
                       
                     <Button link='/portfolio'/>
                 </div>

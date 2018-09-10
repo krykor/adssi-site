@@ -1,49 +1,460 @@
 [
     {
-        "id":"strona-rzeznia",
-        "client":"Restauracja Stara Rzeźnia",
-        "title":"STRONA INTERNETOWA",
-        "category":"webp",
-        "src":"https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzeznia.jpg",
-        "imgAlt":"Strona internetowa Restauracji Stara Rzeźnia"
+        "id": "strona-rzeznia",
+        "client": "Restauracja Stara Rzeźnia",
+        "category": "Strona internetowa",
+        "date": "Marzec 2017",
+        "group":"webp",
+        "colour": "mint",
+        "design": "list",
+        "title": "Strona Restauracji Stara Rzeźnia",
+        "description": "Witryna Restauracji Stara Rzeźnia jest projektem nowoczesnym, nawiązującym do klimatu miejsca i ukazującym zespół, wystrój, menu oraz aktualności. Strona wyposażona została w system rezerwacyjny skracający drogę kontaktu i ułatwiający przebieg rezerwacji. Witryna jest responsywna, przejrzysta i intuicyjna.",
+        "list": [
+            "dopasowany system zarządzania treścią",
+            "intuicyjna i responsywna strona WWW",
+            "wsparcie graficzne i copywriterskie",
+            "opracowanie tekstów przyjaznych SEO",
+            "projekt oparty o technikę User Experience"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzeznia.jpg",
+        "imgAlt": "Strona internetowa Restauracji Stara Rzeźnia",
+        "btnDetails": [
+            {
+                "text": "Zobacz stronę",
+                "link": "https://rzeznia.com.pl",
+                "textAlign": "text-left"
+            }
+        ]
     },
     {
         "id":"profil-zamkowa",
         "client":"Restauracja Zamkowa",
-        "title":"SOCIAL MEDIA",
-        "category":"social",
-        "src":"https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa.jpg","imgAlt":"Strona Facebook Restauracji Stara Rzeźnia"
+        "category":"Social media",
+        "date": "Od listopada 2017",
+        "group":"social",
+        "colour": "green",
+        "design": "list",
+        "title": "Profil Restauracji Zamkowa",
+        "description": "Restauracja Zamkowa obecna jest na portalu Facebook oraz Instagram. Profil Restauracji Zamkowa skupia się na pokazaniu świadczonych usług oraz ewoluującego menu, wnętrz i eventów, które się tam odbywają.",
+        "list": [
+            "administrowanie profilem",
+            "aktywne pozyskiwanie fanów",
+            "utrzymywanie stałego kontaktu ze społecznością",
+            "organizacja konkursów i koordynacja promocji",
+            "tworzenie angażujących, kreatywnych grafik"
+        ],
+        "imgSrc":"https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa.jpg",
+        "imgAlt":"Strona Facebook Restauracji Stara Rzeźnia",
+        "btnDetails": [
+            {
+                "text": "Zobacz profil na FB",
+                "link": "https://www.facebook.com/RestauracjaZamkowaSzczecin/",
+                "textAlign": "text-left"
+            },
+            {
+                "text": "Zobacz profil na Instagramie",
+                "link": "https://www.instagram.com/restauracjazamkowa/",
+                "textAlign": "text-left"
+            }
+        ]
+    },
+    {
+        "id": "photo-rzeznia",
+        "client": "Restauracja Stara Rzeźnia",
+        "category": "Sesja zdjęciowa",
+        "date": "Od 2017 roku",
+        "group":"photo",
+        "colour": "mint",
+        "design": "slide",
+        "title": "Sesje zdjęciowe dla Restauracji Stara Rzeźnia",
+        "description": "Sesja zdjęciowa skupia się nie pokazaniu klimatu, atmosfery restauracji, przybliżeniu Gościom zespołu, który tworzy potrawy oraz dba o atmosferę a także ukazywanie potraw i sezonowości menu restauracji.",
+        "list": [
+            "wykonanie zdjęć potraw i pracowników",
+            "obróbka cyfrowa zdjęć"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/sesje/sesja-rzeznia.jpg",
+        "imgAlt": "Sejsa zdjęciowa Restauracji Stara Rzeźnia"
+    },
+    {
+        "id": "targi-slubne-zamkowa",
+        "client": "Restauracja Zamkowa",
+        "category": "Projekt graficzny",
+        "date": "Styczeń 2017",
+        "group":"graphicd",
+        "colour": "pink",
+        "design": "slide",
+        "title": "Projekt na Wielką Galę Ślubną",
+        "description": "Nowe menu restauracji Zamkowa zaprezentowane zostało na 13. Wielkiej Gali Ślubnej. Szata graficzna ukazuje urodę oraz niezwykłą atmosferę miejsca.",
+        "list": [
+            "opracowanie graficzne",
+            "wizualizacja projektu"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/targi-slubne/targi-slubne.jpg",
+        "imgAlt": "Wielkie Targi Ślubne",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/targi-slubne/targi-slubne-1.jpg",
+                "alt": "Wielkie Targi Ślubne",
+                "title": "Projekt na Wielką Galę Ślubną"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/targi-slubne/targi-slubne-2.jpg",
+                "alt": "Wielkie Targi Ślubne",
+                "title": "Projekt na Wielką Galę Ślubną"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/targi-slubne/targi-slubne-3.jpg",
+                "alt": "Wielkie Targi Ślubne",
+                "title": "Projekt na Wielką Galę Ślubną"
+            }
+        ]
+    },
+    {
+        "id": "dni-rzeznika",
+        "client": "Restauracja Stara Rzeźnia",
+        "category": "Projekt graficzny",
+        "date": "Styczeń 2017",
+        "group":"graphicd",
+        "colour": "purple",
+        "design": "slide",
+        "title": "Projekt na Dni Rzeźnika",
+        "description": "Projekt nawiązuje do minimalistycznego klimatu panującego w Restauracji Stara Rzeźnia. Standy na stoliki cechuje przejrzystość oraz czytelność zawartych w nich informacji.",
+        "list": [
+            "opracowanie graficzne",
+            "wizualizacja projektu"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/dni-rzeznika/dni-rzeznika.jpg",
+        "imgAlt": "Dni rzeźnika",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/dni-rzeznika/dni-rzeznika-2.jpg",
+                "alt": "Dni Rzeznika w Restauracji Stara Rzeźnia",
+                "title": "Projekt na Dni Rzeźnika"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/dni-rzeznika/dni-rzeznika-1.jpg",
+                "alt": "Dni Rzeznika w Restauracji Stara Rzeźnia",
+                "title": "Projekt na Dni Rzeźnika"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/menu-walentynki-3.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Stara Rzeźnia"
+            }
+        ]
+    },
+    {
+        "id": "projekt-walentynkowy-rzeznia",
+        "client": "Restauracja Stara Rzeźnia",
+        "category": "Projekt graficzny",
+        "date": "Luty 2017",
+        "group":"graphicd",
+        "colour": "blue",
+        "design": "slide",
+        "title": "Projekt walentynkowy",
+        "description": "Projekt zapraszający gosci na kolację walentynkową oraz informujący o daniach i mozliwościach. W projekcie użyte zostało jedno ze zdjęć z sesji, odpowiednio dopasowany font oraz kolory nadają projektowy unikatowy charakter.",
+        "list": [
+            "opracowanie graficzne",
+            "wizualizacja projektu"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/projekt-walentynki/walentynki-rzeznia.jpg",
+        "imgAlt": "Menu walentynkowe Restauracji Stara Rzeźnia",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/plakat-walentynki-2.jpg",
+                "alt": "Plakat walentynkowy",
+                "title": "Plakat walentynkowy dla Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "img/portfolio/projekt-walentynki/menu-walentynki-1.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/menu-walentynki-2.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Stara Rzeźnia"
+            }
+        ]
     },
     {
         "id":"projekt-walentynkowy-zamkowa",
         "client":"Restauracja Zamkowa",
-        "title":"PROJEKT GRAFICZNY",
-        "category":"graphicd",
-        "src":"https://adssi.pl/img/portfolio/targi-slubne/targi-slubne.jpg",
-        "imgAlt":"Projekt walentynkowy"
-    },
-    {
-        "id":"profil-orell",
-        "client":"Orell",
-        "title":"SOCIAL MEDIA",
-        "category":"social",
-        "src":"http://adssi.pl/img/portfolio/social/orell/sm-orell.jpg",
-        "imgAlt":"Profil Orell"
-    },
-    {
-        "id":"kolacja-degustacyjna",
-        "client":"Restauracja Stara Rzeźnia",
-        "title":"PROJEKT GRAFICZNY",
-        "category":"graphicd",
-        "src":"http://adssi.pl/img/portfolio/kolacja-degustacyjna/zaproszenie.jpg",
-        "imgAlt":"Kolacja degustacyja w Restauracji Stara Rzeźnia"
+        "category":"Projekt graficzny",
+        "date": "Luty 2017",
+        "group":"graphicd",
+        "colour": "rose",
+        "design": "list",
+        "title": "Projekt walentynkowy",
+        "description": "Plakat oraz standy na stoliki stworzone zostały na kolację walentynkową. Projekt nawiązuje do atmosfery oraz klimatu restauracji.",
+        "list": [
+            "opracowanie graficzne",
+            "wizualizacja projektu"
+        ],
+        "imgSrc":"https://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/zamkowa-walentynki.jpg",
+        "imgAlt":"Projekt walentynkowy",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/menu-1.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/menu-2.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/menu-3.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/menu-4.jpg",
+                "alt": "Menu walentynkowe",
+                "title": "Menu walentynkowe dla Restauracji Zamkowej"
+            }
+        ]
     },
     {   
         "id":"sm-rzeznia",
         "client":"Restauracja Stara Rzeźnia",
-        "title":"SOCIAL MEDIA",
-        "category":"social",
-        "src":"http://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia.jpg",
-        "imgAlt":"Profile Social Media Restauracji Stara Rzeźnia"
+        "category":"Social media",
+        "date": "Od listopada 2017",
+        "group":"social",
+        "colour": "mint",
+        "design": "list",
+        "title": "Profil Restauracji Stara Rzeźnia",
+        "description": "W mediach społecznościowych restauracja Stara Rzeźnia obecna jest na Facebooku oraz Instagramie. Profile te łączą restaurację ze społecznością tam zebraną, pokazują sezonowe menu, pracę załogi restauracji, aktualne promocje.",
+        "list": [
+            "administrowanie profilem",
+            "aktywne pozyskiwanie fanów",
+            "utrzymywanie stałego kontaktu ze społecznością",
+            "organizacja konkursów i koordynacja promocji",
+            "tworzenie angażujących, kreatywnych grafik"
+        ],
+        "imgSrc":"http://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia.jpg",
+        "imgAlt":"Profile społecznościowe Restauracji Stara Rzeźnia",
+        "imgDetails": [
+            {
+                "src": "img/portfolio/social/rzeznia/sm-rzeznia-1.jpg",
+                "alt": "Strona Facebook Restauracji Stara Rzeźnia",
+                "title": "Profil Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "img/portfolio/social/rzeznia/sm-rzeznia-2.jpg",
+                "alt": "Strona Facebook Restauracji Stara Rzeźnia",
+                "title": "Profil Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "img/portfolio/social/rzeznia/sm-rzeznia-3.jpg",
+                "alt": "Strona Facebook Restauracji Stara Rzeźnia",
+                "title": "Profil Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "img/portfolio/social/rzeznia/sm-rzeznia-4.jpg",
+                "alt": "Strona Facebook Restauracji Stara Rzeźnia",
+                "title": "Profil Restauracji Stara Rzeźnia"
+            }
+        ],
+        "btnDetails": [
+            {
+                "text": "Zobacz profil na FB",
+                "link": "https://www.facebook.com/RestauracjaStaraRzeznia/",
+                "textAlign": "text-left"
+            },
+            {
+                "text": "Zobacz profil na Instagramie",
+                "link": "https://www.instagram.com/stararzeznia/",
+                "textAlign": "text-left"
+            }
+        ]
+    },
+    {   
+        "id":"sm-LbyIv",
+        "client":"L by Iv",
+        "category":"Social media",
+        "date": "listopad 2016 - luty 2017",
+        "group":"social",
+        "colour": "blue2",
+        "design": "list",
+        "title": "Profil L by IV",
+        "description": "Profil Lace by Iv założony został na Facebooku oraz Instagramie, ukazywał on markę unikatowych kreacji. Tworzone treści, grafiki oraz sekcja „sklep” miały na celu pokazanie piękna oraz świetnej jakości projektów.",
+        "list": [
+            "administrowanie profilem",
+            "aktywne pozyskiwanie fanów",
+            "utrzymywanie stałego kontaktu ze społecznością",
+            "organizacja konkursów i koordynacja promocji",
+            "tworzenie angażujących, kreatywnych grafik"
+        ],
+        "imgSrc":"http://adssi.pl/img/portfolio/social/l/sm-l.jpg",
+        "imgAlt":"Profil L by Iv",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/social/l/sm-l-1.jpg",
+                "alt": "Facebook L by Iv",
+                "title": "Facebook L by Iv"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/l/sm-l-2.jpg",
+                "alt": "Facebook L by Iv",
+                "title": "Facebook L by Iv"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/l/sm-l-3.jpg",
+                "alt": "Instagram L by Iv",
+                "title": "Instagram L by Iv"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/l/sm-l-4.jpg",
+                "alt": "Instagram L by Iv",
+                "title": "Instagram L by Iv"
+            }
+        ],
+        "btnDetails": [
+            {
+                "text": "Zobacz profil na FB",
+                "link": "https://www.facebook.com/LbyIvpl/",
+                "textAlign": "text-left"
+            },
+            {
+                "text": "Zobacz profil na Instagramie",
+                "link": "https://www.instagram.com/lbyiv/",
+                "textAlign": "text-left"
+            }
+        ]
+    },
+    {
+        "id":"profil-orell",
+        "client":"Orell",
+        "category":"Social media",
+        "date": "Od marca 2017",
+        "group":"social",
+        "colour": "green",
+        "design": "list",
+        "title": "Profil Usługi Kominiarskie Orell",
+        "description": "Profil Orell na portalu Facebook skupia sie na przedstawieniu świadczonych usług oraz na rozbudowanej ofercie sklepu. Działania prowadzone sa dwutorowo - z jednej strony docieramy do klientów indywidualnych, z drugiej do firm poszukujących konkretnych produktów czy usług.",
+        "list": [
+            "administrowanie profilem",
+            "aktywne pozyskiwanie fanów",
+            "utrzymywanie stałego kontaktu ze społecznością",
+            "organizacja konkursów i koordynacja promocji",
+            "tworzenie angażujących, kreatywnych grafik"
+        ],
+        "imgSrc":"http://adssi.pl/img/portfolio/social/orell/sm-orell.jpg",
+        "imgAlt":"Profil Orell",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/social/orell/sm-orell-1.jpg",
+                "alt": "Strona Facebook Orell",
+                "title": "Facebook Orell"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/orell/sm-orell-2.jpg",
+                "alt": "Strona Facebook Orell",
+                "title": "Facebook Orell"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/orell/sm-orell-3.jpg",
+                "alt": "Strona Facebook Orell",
+                "title": "Facebook Orell"
+            }
+        ],
+        "btnDetails": [
+            {
+                "text": "Zobacz profil na FB",
+                "link": "https://www.facebook.com/orellszczecin/",
+                "textAlign": "text-left"
+            }
+        ]
+    },
+    {
+        "id": "photo-zamkowa",
+        "client": "Restauracja Zamkowa",
+        "category": "Sesja zdjęciowa",
+        "date": "2017",
+        "group":"photo",
+        "colour": "mint",
+        "design": "slide",
+        "title": "Sesje zdjęciowe dla Restauracji Zamkowa",
+        "description": "Sesja zdjęciowa skupia się nie pokazaniu klimatu, atmosfery restauracji, przybliżeniu Gościom zespołu, który tworzy potrawy oraz dba o atmosferę a także ukazywanie potraw i sezonowości menu restauracji.",
+        "list": [
+            "wykonanie zdjęć potraw i pracowników",
+            "obróbka cyfrowa zdjęć"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-zamkowa.jpg",
+        "imgAlt": "Sesja zdjęciowa Restauracji Zamkowa",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-2.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-3.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-4.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-5.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-6.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-7.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/zamkowa/sesja-z-8.jpg",
+                "alt": "Sesja zdjęciowa w Restauracji Zamkowej",
+                "title": "Sesja zdjęciowa w Restauracji Zamkowej"
+            }
+        ]
+    },
+    {
+        "id":"kolacja-degustacyjna-rzeznia",
+        "client":"Restauracja Stara Rzeźnia",
+        "category":"Projekt graficzny",
+        "date": "Luty 2017",
+        "group":"graphicd",
+        "colour": "peach",
+        "design": "slide",
+        "title": "Projekt zaproszeń na kolację degustacyjną",
+        "description": "Projekt ukazuje proponowane dania oraz mówi o najistotniejszych szczegółach kolacji degustacyjnej. Zachowany jest w minimalistycznej stylistyce.",
+        "list": [
+            "opracowanie graficzne",
+            "wizualizacja projektu"
+        ],
+        "imgSrc":"http://adssi.pl/img/portfolio/kolacja-degustacyjna/zaproszenie.jpg",
+        "imgAlt":"Kolacja degustacyja w Restauracji Stara Rzeźnia",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/kolacja-degustacyjna/zaproszenie-1.jpg",
+                "alt": "Zaproszenie na kolację degustacyjną",
+                "title": "Zaproszenie na kolację degustacyjną w Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/kolacja-degustacyjna/zaproszenie-2.jpg",
+                "alt": "Zaproszenie na kolację degustacyjną",
+                "title": "Zaproszenie na kolację degustacyjną w Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/kolacja-degustacyjna/zaproszenie-3.jpg",
+                "alt": "Zaproszenie na kolację degustacyjną",
+                "title": "Zaproszenie na kolację degustacyjną w Restauracji Stara Rzeźnia"
+            }
+        ]
     }
+    
 ]

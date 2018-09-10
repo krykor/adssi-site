@@ -1,0 +1,29 @@
+[
+    {
+        "id": "strona-rzeznia",
+        "client": "Restauracja Stara Rzeźnia",
+        "category": "Strona internetowa",
+        "date": "Marzec 2017",
+        "group":"webp",
+        "colour": "mint",
+        "design": "list",
+        "title": "Strona Restauracji Stara Rzeźnia",
+        "description": "Witryna Restauracji Stara Rzeźnia jest projektem nowoczesnym, nawiązującym do klimatu miejsca i ukazującym zespół, wystrój, menu oraz aktualności. Strona wyposażona została w system rezerwacyjny skracający drogę kontaktu i ułatwiający przebieg rezerwacji. Witryna jest responsywna, przejrzysta i intuicyjna.",
+        "list": [
+            "dopasowany system zarządzania treścią",
+            "intuicyjna i responsywna strona WWW",
+            "wsparcie graficzne i copywriterskie",
+            "opracowanie tekstów przyjaznych SEO",
+            "projekt oparty o technikę User Experience"
+        ],
+        "imgSrc": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzeznia.jpg",
+        "imgAlt": "Strona internetowa Restauracji Stara Rzeźnia",
+        "btnDetails": [
+            {
+                "text": "Zobacz stronę",
+                "link": "https://rzeznia.com.pl",
+                "textAlign": "text-left"
+            }
+        ]
+    }
+]
