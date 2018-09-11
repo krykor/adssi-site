@@ -1,47 +1,53 @@
-import React, { Components } from 'react'
+import React, { Component } from 'react'
 import { BrowserRouter as Route, Link, Switch } from 'react-router-dom'
+
+import { Button } from '../../stateless/button'
 
 
 import  ourWorksData  from '../../../api/ourWorksData.json'
 
-export const Elements = ({match}) => (
-    
-    <div className="portfolio-site">
-        <div className="container">
-            <div className="row">
-                <div id="aa" className="col-md-7">
-                                    <p><img src="img/portfolio/strony/rzeznia/strona-rzezni-1.jpg" width="100%" alt="Strona Restauracji Stara Rzeźnia" title="Strona Restauracji Stara Rzeźnia"/></p>
-                                    <p><img src="img/portfolio/strony/rzeznia/strona-rzezni-2.jpg" width="100%" alt="Strona Restauracji Stara Rzeźnia" title="Strona Restauracji Stara Rzeźnia"/></p>
-                                    <p><img src="img/portfolio/strony/rzeznia/strona-rzezni-3.jpg" width="100%" alt="Strona Restauracji Stara Rzeźnia" title="Strona Restauracji Stara Rzeźnia"/></p>
-
-                </div>
-                <div className="col-md-5">
-                    <div id="bb" className="sidebarportfolio">
-                        <h2>Strona Restauracji Stara Rzeźnia</h2>{console.log(
-                            
-                            
-                            ourWorksData.find((x)=> match.params.user === x.id)
-                            
-                            )}
-                        <hr className="line-blue"/>
-                        <p>Witryna Restauracji Stara Rzeźnia jest projektem nowoczesnym, nawiązującym do klimatu miejsca i ukazującym zespół, wystrój, menu oraz aktualności. Strona wyposażona została w system rezerwacyjny skracający drogę kontaktu i ułatwiający przebieg rezerwacji. Witryna jest responsywna, przejrzysta i intuicyjna.</p>
-                        <ul className="list-check" title="Działania">
-                            <li>dopasowany system zarządzania treścią</li>
-                            <li>intuicyjna i responsywna strona WWW</li>
-                            <li>wsparcie graficzne i copywriterskie</li>
-                            <li>opracowanie tekstów przyjaznych SEO</li>
-                            <li>projekt oparty o technikę User Experience</li>
-                        </ul>
-                        <hr/>
-                        <div className="list-info">
-                                <p><span>Klient:</span> Restauracja Stara Rzeźnia</p>
-                                <p><span>Usługa:</span> Strona internetowa</p>
-                                <p><span>Data:</span> Marzec 2017</p>
+export class Elements extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            ourWorks: ourWorksData.find((x)=> this.props.match.params.user === x.id),
+        }
+    }
+    render() {
+        return (
+            <div className="portfolio-site">
+                <div className="container">
+                    <div className="row">
+                        <div id="aa" className="col-md-7">
+                            {this.state.ourWorks.imgDetails.map((item, index) => <p key={`${this.state.ourWorks.id}-img-${index}`}><img src={item.src} width="100%" alt={item.alt} title={item.title}/></p>)}
                         </div>
-                        <a href="http://rzeznia.com.pl" target="_blank"><button type="button" className="btn btn-primary">Zobacz stronę</button></a>
+                        <div className="col-md-5">
+                            <div id="bb" className="sidebarportfolio">
+                                <h2>{this.state.ourWorks.title}</h2>
+                                <hr className="line-blue"/>
+                                <p>{this.state.ourWorks.description}</p>
+                                <ul className="list-check" title="Działania">
+                                    {this.state.ourWorks.list.map((item, index)=> <li key={`${this.state.ourWorks.id}-list-${index}`}>{item}</li>)}
+                                </ul>
+                                <hr/>
+                                <div className="list-info">
+                                        <p><span>Klient:</span> {this.state.ourWorks.client}</p>
+                                        <p><span>Usługa:</span> {this.state.ourWorks.category}</p>
+                                        <p><span>Data:</span> {this.state.ourWorks.date}</p>
+                                </div>
+                                {this.state.ourWorks.btnDetails &&this.state.ourWorks.btnDetails.map((item, index) => <Button 
+                                    link={item.link}
+                                    text={item.text}
+                                    /* textAlign={item.textAlign} */
+                                    grid="col-sm-6"
+                                    key={`${this.state.ourWorks.id}-button-${index}`}
+                                />)}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-  );
+        )
+    }
+    
+  }

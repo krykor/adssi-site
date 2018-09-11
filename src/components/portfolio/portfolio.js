@@ -5,10 +5,6 @@ import { OurWorksElement } from '../home/our-works-element'
 import { PortfolioButton } from './portfolio-button'
 import  ourWorksData  from '../../api/ourWorksData.json'
 
-import { Elements } from './portfolio-element/element'
-
-import { BrowserRouter as Router, Link } from 'react-router-dom'
-
 export class Portfolio extends Component {
     constructor(props) {
         super(props);
@@ -46,12 +42,10 @@ export class Portfolio extends Component {
                 },
                 {
                     text: "Wszystkie",
-
                 }
             ],  
         }
     }
-    
     componentDidMount() {
         this.setState(
             { 
@@ -59,7 +53,6 @@ export class Portfolio extends Component {
             } 
         )
     }
-
     handleClick(x) {
         this.setState(
             {
@@ -67,13 +60,6 @@ export class Portfolio extends Component {
             }
         )
     }
-
-    Business = () => {
-        return (
-            <div> This is business </div>
-        )
-    }
-    
     render() {
         return (
             <section id="portfolio" className="bg-color-bialy portfolio-grid">
@@ -102,11 +88,6 @@ export class Portfolio extends Component {
                                 category={x.category} 
                                 src={x.imgSrc} 
                                 imgAlt={x.imgAlt}/>)}
-                    </div>
-
-
-                    <div>
-                    <Link to="/portfolio/chris">Chris (dynamic)</Link>
                     </div>
                 </div>
             </section>

@@ -24,11 +24,6 @@ export class OurWorks extends Component {
             ourWorks: []
         }
     }
-    /* componentDidMount() {
-        fetch('_test.json')
-          .then(response => response.json())
-          .then(myJson => console.log(JSON.stringify(myJson)));
-    } */
     componentDidMount() {
         this.setState(
             { ourWorks: ourWorksData } 
@@ -46,7 +41,8 @@ export class OurWorks extends Component {
                     {this.state.ourWorks.map(x => 
                         <OurWorksElement 
                             group={x.group} 
-                            key={x.id} 
+                            key={x.id}
+                            id={x.id} 
                             client={x.client} 
                             category={x.category} 
                             src={x.imgSrc} 

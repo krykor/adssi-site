@@ -18,6 +18,23 @@
         ],
         "imgSrc": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzeznia.jpg",
         "imgAlt": "Strona internetowa Restauracji Stara Rzeźnia",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzezni-1.jpg",
+                "alt": "Strona Restauracji Stara Rzeźnia",
+                "title": "Strona Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzezni-2.jpg",
+                "alt": "Strona Restauracji Stara Rzeźnia",
+                "title": "Strona Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzezni-3.jpg",
+                "alt": "Strona Restauracji Stara Rzeźnia",
+                "title": "Strona Restauracji Stara Rzeźnia"
+            }
+        ],
         "btnDetails": [
             {
                 "text": "Zobacz stronę",
@@ -45,6 +62,28 @@
         ],
         "imgSrc":"https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa.jpg",
         "imgAlt":"Strona Facebook Restauracji Stara Rzeźnia",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa-1.jpg",
+                "alt": "Strona Facebook Restauracji Zamkowa",
+                "title": "Profil Restauracji Zamkowa"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa-2.jpg",
+                "alt": "Strona Facebook Restauracji Zamkowa",
+                "title": "Profil Restauracji Zamkowa"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa-3.jpg",
+                "alt": "Strona Facebook Restauracji Zamkowa",
+                "title": "Profil Restauracji Zamkowa"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/social/zamkowa/sm-zamkowa-4.jpg",
+                "alt": "Strona Facebook Restauracji Zamkowa",
+                "title": "Profil Restauracji Zamkowa"
+            }
+        ],
         "btnDetails": [
             {
                 "text": "Zobacz profil na FB",
@@ -73,7 +112,29 @@
             "obróbka cyfrowa zdjęć"
         ],
         "imgSrc": "https://adssi.pl/img/portfolio/sesje/sesja-rzeznia.jpg",
-        "imgAlt": "Sejsa zdjęciowa Restauracji Stara Rzeźnia"
+        "imgAlt": "Sejsa zdjęciowa Restauracji Stara Rzeźnia",
+        "imgDetails": [
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/potrawa1.jpg",
+                "alt": "Sesja zdjęciowa",
+                "title": "Sesja zdjęciowa w Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/potrawa2.jpg",
+                "alt": "Sesja zdjęciowa",
+                "title": "Sesja zdjęciowa w Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/potrawa3.jpg",
+                "alt": "Sesja zdjęciowa",
+                "title": "Sesja zdjęciowa w Restauracji Stara Rzeźnia"
+            },
+            {
+                "src": "https://adssi.pl/img/portfolio/sesje/potrawa4.jpg",
+                "alt": "Sesja zdjęciowa",
+                "title": "Sesja zdjęciowa w Restauracji Stara Rzeźnia"
+            }
+        ]
     },
     {
         "id": "targi-slubne-zamkowa",
@@ -166,7 +227,7 @@
                 "title": "Plakat walentynkowy dla Restauracji Stara Rzeźnia"
             },
             {
-                "src": "img/portfolio/projekt-walentynki/menu-walentynki-1.jpg",
+                "src": "https://adssi.pl/img/portfolio/projekt-walentynki/menu-walentynki-1.jpg",
                 "alt": "Menu walentynkowe",
                 "title": "Menu walentynkowe dla Restauracji Stara Rzeźnia"
             },
@@ -237,22 +298,22 @@
         "imgAlt":"Profile społecznościowe Restauracji Stara Rzeźnia",
         "imgDetails": [
             {
-                "src": "img/portfolio/social/rzeznia/sm-rzeznia-1.jpg",
+                "src": "https://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia-1.jpg",
                 "alt": "Strona Facebook Restauracji Stara Rzeźnia",
                 "title": "Profil Restauracji Stara Rzeźnia"
             },
             {
-                "src": "img/portfolio/social/rzeznia/sm-rzeznia-2.jpg",
+                "src": "https://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia-2.jpg",
                 "alt": "Strona Facebook Restauracji Stara Rzeźnia",
                 "title": "Profil Restauracji Stara Rzeźnia"
             },
             {
-                "src": "img/portfolio/social/rzeznia/sm-rzeznia-3.jpg",
+                "src": "https://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia-3.jpg",
                 "alt": "Strona Facebook Restauracji Stara Rzeźnia",
                 "title": "Profil Restauracji Stara Rzeźnia"
             },
             {
-                "src": "img/portfolio/social/rzeznia/sm-rzeznia-4.jpg",
+                "src": "https://adssi.pl/img/portfolio/social/rzeznia/sm-rzeznia-4.jpg",
                 "alt": "Strona Facebook Restauracji Stara Rzeźnia",
                 "title": "Profil Restauracji Stara Rzeźnia"
             }
