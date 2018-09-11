@@ -2,7 +2,12 @@ import React, { Component } from 'react'
 
 import { SectionHead } from '../stateless/section-head'
 import { OurWorksElement } from '../home/our-works-element'
+import { PortfolioButton } from './portfolio-button'
 import  ourWorksData  from '../../api/ourWorksData.json'
+
+import { Elements } from './portfolio-element/element'
+
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 export class Portfolio extends Component {
     constructor(props) {
@@ -22,19 +27,54 @@ export class Portfolio extends Component {
                     }
                 ]
             },
-            buttonText: ["Web Design", "Social Media", "Graphic Design", "Photo", "Wszystkie"]
-            
+            buttonText: [
+                {
+                    text: "Web Design",
+                    filter: "webp"
+                },
+                {
+                    text: "Social Media",
+                    filter: "social"
+                },
+                {
+                    text: "Graphic Design",
+                    filter: "graphicd"
+                },
+                {
+                    text: "Photo",
+                    filter: "photo"
+                },
+                {
+                    text: "Wszystkie",
+
+                }
+            ],  
         }
     }
-
+    
     componentDidMount() {
         this.setState(
-            { ourWorks: ourWorksData } 
+            { 
+                ourWorks: ourWorksData
+            } 
+        )
+    }
+
+    handleClick(x) {
+        this.setState(
+            {
+                ourWorks: ourWorksData.filter( item => item.group === x).length ?  ourWorksData.filter( item => item.group === x) : ourWorksData,
+            }
+        )
+    }
+
+    Business = () => {
+        return (
+            <div> This is business </div>
         )
     }
     
     render() {
-        console.log(this.state.ourWorks)
         return (
             <section id="portfolio" className="bg-color-bialy portfolio-grid">
                 <div className="container">
@@ -44,26 +84,29 @@ export class Portfolio extends Component {
                             content={this.state.portfolioHead.content}/>
 
                         {this.state.buttonText.map((item, index) => 
-                            <div 
-                                className={`col-lg-2 col text-center ${
-                                    index === 0 ? `col-lg-offset-1 col-sm-3` : 
-                                        (index ===  this.state.buttonText.length-1 ? `col-sm-12` : `col-sm-3`)}`} 
-
-                                key={`portfolio-button-${index}`}>
-
-                                <button type="button" className={`btn btn-primary`}>{item}</button>
-                            </div>
+                            <PortfolioButton 
+                            button={item} 
+                            index={index} 
+                            buttonLength={this.state.buttonText.length-1}
+                            handleClick={x => this.handleClick(x)}
+                            key={`portfolio-button-${index}`}/>
                         )}
                     </div>
                     <div className="row">
                         {this.state.ourWorks.map(x => 
                             <OurWorksElement 
                                 group={x.group} 
-                                key={x.id} 
+                                key={x.id}
+                                id={x.id} 
                                 client={x.client} 
                                 category={x.category} 
                                 src={x.imgSrc} 
                                 imgAlt={x.imgAlt}/>)}
+                    </div>
+
+
+                    <div>
+                    <Link to="/portfolio/chris">Chris (dynamic)</Link>
                     </div>
                 </div>
             </section>
