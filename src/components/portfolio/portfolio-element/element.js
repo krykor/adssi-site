@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Route, Link, Switch } from 'react-router-dom'
 
 import { Button } from '../../stateless/button'
 
-
 import  ourWorksData  from '../../../api/ourWorksData.json'
+//import .line-blue-mint from '../../../scss/index.scss'
 
 export class Elements extends Component {
     constructor(props) {
         super(props);
         this.state = {
             ourWorks: ourWorksData.find((x)=> this.props.match.params.user === x.id),
+            colors: ourWorksData.find((x)=> this.props.match.params.user === x.id).colour
         }
     }
+    componentDidMount() {
+        //this.setState({colors: this.state.ourWorks.colour})
+        this.state.colors && import(`../../../css/${this.state.colors}.css`)
+    }
+
+
+
     render() {
         return (
             <div className="portfolio-site">
@@ -35,7 +42,7 @@ export class Elements extends Component {
                                         <p><span>Usługa:</span> {this.state.ourWorks.category}</p>
                                         <p><span>Data:</span> {this.state.ourWorks.date}</p>
                                 </div>
-                                {this.state.ourWorks.btnDetails &&this.state.ourWorks.btnDetails.map((item, index) => <Button 
+                                {this.state.ourWorks.btnDetails && this.state.ourWorks.btnDetails.map((item, index) => <Button 
                                     link={item.link}
                                     text={item.text}
                                     /* textAlign={item.textAlign} */
@@ -49,5 +56,4 @@ export class Elements extends Component {
             </div>
         )
     }
-    
-  }
+}

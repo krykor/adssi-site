@@ -1,0 +1,34 @@
+.navbar-inverse, .bg-primary {
+  background-color: #b3d2fd!important;
+}
+.bg-primary{
+  color: #000 !important;
+}
+.line-blue, .line-blue-cen{
+  border-color: #b3d2fd!important;
+}
+.text-primary, .list-check li:before{
+  color: #b3d2fd!important;
+}
+.navbar-nav li a:hover { /*kolor czcionki po najechaniu myszką*/
+  color: #fff !important;
+}
+.btn-primary,
+.btn-primary a{
+  background-color: transparent;
+  border-color: #b3d2fd;
+  color: #000;
+}
+.btn-primary:hover,
+.btn-primary:hover a,
+.btn-primary:focus,
+.btn-primary:focus a,
+.btn-primary:active:hover,
+.btn-primary:active:hover a{
+  background-color: #b3d2fd;
+  border-color: #b3d2fd;
+  color: #fff;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}

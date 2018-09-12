@@ -1,0 +1,18 @@
+.navbar-inverse, .bg-primary {
+  background-color: #eac6d1 !important;
+}
+.bg-primary{
+  color: #777 !important;
+}
+.line-blue, .line-blue-cen{
+  border-color: #eac6d1 !important;
+}
+.text-primary, .list-check li:before{
+  color: #eac6d1 !important;
+}
+.navbar-nav li a:hover { /*kolor czcionki po najechaniu myszką*/
+  color: #fff !important;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
