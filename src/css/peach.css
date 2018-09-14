@@ -1,17 +1,17 @@
 .navbar-inverse, .bg-primary {
-  background-color: #f6c3b5!important;
+  background-color: #f6c3b5;
 }
 .bg-primary{
-  color: #000 !important;
+  color: #000;
 }
 .line-blue, .line-blue-cen{
   border-color: #f6c3b5;
 }
 .text-primary, .list-check li:before{
-  color: #f6c3b5 !important;
+  color: #f6c3b5;
 }
 .navbar-nav li a:hover { /*kolor czcionki po najechaniu myszką*/
-  color: #fff !important;
+  color: #fff;
 }
 .btn-primary,
 .btn-primary a{

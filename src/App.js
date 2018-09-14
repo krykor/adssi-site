@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import { Home } from './components/home/home'
 import { Offer } from './components/offer/offer'
@@ -9,15 +9,26 @@ import { MainFooter } from './components/footer/main-footer'
 import { MainNav } from './components/nav/main-nav'
 import { Elements } from './components/portfolio/portfolio-element/element'
 
-import  ourWorksData  from './api/ourWorksData.json'
+import './api/ourWorksData.json'
+import './css/colors.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        colors: "home"
+    }
+  }
+
+  setColors(x) {this.setState({ colors: x})} 
+
   render() {
+    
     return (
       <Router>
         <div className="App">
           <header className="App-header">
-            <MainNav navClass="affix"/> 
+            <MainNav navClass="affix" color={this.state.colors} setColors={x => this.setColors(x)}/> 
           </header>
           <div>
             <Switch>
@@ -26,10 +37,10 @@ class App extends Component {
               <Route exact path="/portfolio" component={Portfolio}/>
               <Route exact path="/kontakt" component={Contact} />
 
-              <Route path="/portfolio/:user" component={Elements}/>
+              <Route path="/portfolio/:user" render={(props) => <Elements {...props}  colors={x => this.setColors(x)}/>} />}
             </Switch>
           </div>
-          <MainFooter />
+          <MainFooter color={this.state.colors}/>
         </div>
       </Router>
     );

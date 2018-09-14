@@ -31,7 +31,6 @@ export class Contact extends Component {
         }
     }
     render() {
-        {console.log(JSON.stringify(this.state.contactComponentForm))}
         return (
             <div style={{backgroundColor: '#abebeb'}}>
                 <div>

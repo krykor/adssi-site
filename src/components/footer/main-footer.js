@@ -38,15 +38,15 @@ export class MainFooter extends Component {
             <footer className="text-center">
                 <div className="stopka-1">
                     <div className="container">
-                        <SectionHead title={this.state.footer.title}/>
+                        <SectionHead title={this.state.footer.title} color={this.props.color}/>
                     </div>
                     <div className="container">
                         <div className="row">
-                            {this.state.footerDetails.map(item => <FooterDetails details={item} key={item.id}/>)}
+                            {this.state.footerDetails.map(item => <FooterDetails details={item} key={item.id} color={this.props.color}/>)}
                         </div>
                     </div>
                 </div>
-                <div className="text-center bg-primary stopka-2">
+                <div className={`text-center bg-primary bg-primary-${this.props.color} stopka-2`}>
                     <p>© Copyright Interaktywna Agencja Marketingowa Adssi</p>
                 </div>
             </footer>

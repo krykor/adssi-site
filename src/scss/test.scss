@@ -1,0 +1,28 @@
+
+/* Line */
+.line-blue-peach{
+    border-color: #d5f !important;
+  }
+
+/* List */
+.list-check-peach li:before{
+  color: #d5f !important;
+}
+
+/* Button */
+.btn-primary-peach,
+.btn-primary-peach a{
+  background-color: transparent;
+  border-color: #d5f;
+  color: #000;
+}
+.btn-primary-peach:hover,
+.btn-primary-peach:hover a,
+.btn-primary-peach:focus,
+.btn-primary-peach:focus a,
+.btn-primary-peach:active:hover,
+.btn-primary-peach:active:hover a{
+  background-color: #d5f;
+  border-color: #d5f;
+  color: #fff;
+}

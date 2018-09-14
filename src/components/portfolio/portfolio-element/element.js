@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 import { Button } from '../../stateless/button'
 
 import  ourWorksData  from '../../../api/ourWorksData.json'
-//import .line-blue-mint from '../../../scss/index.scss'
 
 export class Elements extends Component {
     constructor(props) {
@@ -13,12 +12,9 @@ export class Elements extends Component {
             colors: ourWorksData.find((x)=> this.props.match.params.user === x.id).colour
         }
     }
-    componentDidMount() {
-        //this.setState({colors: this.state.ourWorks.colour})
-        this.state.colors && import(`../../../css/${this.state.colors}.css`)
-    }
-
-
+    componentDidMount() {this.setColors2()}
+     
+    setColors2() {this.props.colors(this.state.colors)}
 
     render() {
         return (
@@ -31,9 +27,9 @@ export class Elements extends Component {
                         <div className="col-md-5">
                             <div id="bb" className="sidebarportfolio">
                                 <h2>{this.state.ourWorks.title}</h2>
-                                <hr className="line-blue"/>
+                                <hr className={`line-blue line-blue-${this.state.colors}`}/>
                                 <p>{this.state.ourWorks.description}</p>
-                                <ul className="list-check" title="Działania">
+                                <ul className={`list-check list-check-${this.state.colors}`} title="Działania">
                                     {this.state.ourWorks.list.map((item, index)=> <li key={`${this.state.ourWorks.id}-list-${index}`}>{item}</li>)}
                                 </ul>
                                 <hr/>
@@ -48,6 +44,7 @@ export class Elements extends Component {
                                     /* textAlign={item.textAlign} */
                                     grid="col-sm-6"
                                     key={`${this.state.ourWorks.id}-button-${index}`}
+                                    buttonClass={`btn-primary-${this.state.colors}`}
                                 />)}
                             </div>
                         </div>

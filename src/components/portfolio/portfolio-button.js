@@ -10,7 +10,7 @@ export const PortfolioButton = (props) => {
             <button 
                 type="button" 
                 className={`btn btn-primary`}
-                onClick={ () => props.handleClick(props.button.filter)}
+                onClick={() => props.handleClick(props.button.filter)}
                 >{props.button.text}</button>
 
         </div>
