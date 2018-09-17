@@ -31,14 +31,14 @@ export class OurWorks extends Component {
     }
     render() {
         return (
-            <section id="portfolio" className="bg-color-bialy">
+            <section id="portfolio" className="bg-color-white">
             <div className="container">
                 <SectionHead 
                 title={this.state.ourWorksHead.title}
                 content={this.state.ourWorksHead.content}/>
 
                 <div className="row">
-                    {this.state.ourWorks.map(x => 
+                    {this.state.ourWorks.filter(item => item.home).sort((a, b) => a.home-b.home).map(x => 
                         <OurWorksElement 
                             group={x.group} 
                             key={x.id}

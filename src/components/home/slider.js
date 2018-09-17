@@ -38,7 +38,7 @@ export class Slider extends Component {
                         <li id="test147" data-target="#myCarousel" data-slide-to="1"></li>
                     </ol>
                     {/* Wrapper for slides */}
-                    <div className="carousel-inner bg-color-bialy-sl">
+                    <div className="carousel-inner bg-color-white-slider">
                         <div className="item active">
                             <SliderElement slide={this.state.slide[0]}/>
                             <div className="container carousel-caption">

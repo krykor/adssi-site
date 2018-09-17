@@ -62,7 +62,7 @@ export class Portfolio extends Component {
     }
     render() {
         return (
-            <section id="portfolio" className="bg-color-bialy portfolio-grid">
+            <section id="portfolio" className="bg-color-white portfolio-grid">
                 <div className="container">
                     <div className="row">
                         <SectionHead 

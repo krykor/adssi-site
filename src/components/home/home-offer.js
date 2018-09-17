@@ -48,7 +48,7 @@ export class HomeOffer extends Component {
     }
     render() {
         return (
-            <div className="bg-color-jasny">
+            <div className="bg-color-bright">
                 <div id="uslugi" className="container text-center">
                     <div className="row">
                         <OfferComponentLeft 

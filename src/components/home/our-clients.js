@@ -31,7 +31,7 @@ export class OurClients extends Component {
     }
     render() {
         return (
-            <section className="bg-color-bialy">
+            <section className="bg-color-white">
 				<div id="corpo" className="container text-center">
                     <SectionHead title={this.state.ourClientsHead.title}/>
                     <div className="row">

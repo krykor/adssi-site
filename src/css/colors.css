@@ -1,3 +1,5 @@
+/* >>>>NAVBAR AFFIX-TOP FOR ELEMENTS<<<< */
+
 .affix-top-color {
   padding: 0 !important;
   box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.1) !important;
@@ -16,7 +18,7 @@
 /* >>>>ROSE<<<< */
 
 /* Line */
-.line-blue-rose, .line-blue-cen-rose{
+.line-blue-rose, .line-blue-center-rose{
     border-color: #eac6d1 !important;
   }
 
@@ -62,7 +64,7 @@
 /* >>>>PURPLE<<<< */
 
 /* Line */
-.line-blue-purple, .line-blue-cen-purple{
+.line-blue-purple, .line-blue-center-purple{
     border-color: #c0a6ff !important;
   }
 
@@ -108,7 +110,7 @@
 /* >>>>PINK<<<< */
 
 /* Line */
-.line-blue-pink, .line-blue-cen-pink{
+.line-blue-pink, .line-blue-center-pink{
     border-color: #ffdff8 !important;
   }
 
@@ -154,7 +156,7 @@
 /* >>>>MINT<<<< */
 
 /* Line */
-.line-blue-mint, .line-blue-cen-mint{
+.line-blue-mint, .line-blue-center-mint{
     border-color: #cfedeb !important;
   }
 
@@ -200,7 +202,7 @@
 /* >>>>GREEN<<<< */
 
 /* Line */
-.line-blue-green, .line-blue-cen-green{
+.line-blue-green, .line-blue-center-green{
     border-color: #95f4ba !important;
   }
 
@@ -246,7 +248,7 @@
 /* >>>>BLUE<<<< */
 
 /* Line */
-.line-blue-blue, .line-blue-cen-blue{
+.line-blue-blue, .line-blue-center-blue{
     border-color: #abebeb !important;
   }
 
@@ -292,7 +294,7 @@
 /* >>>>BLUE2<<<< */
 
 /* Line */
-.line-blue-blue2, .line-blue-cen-blue2{
+.line-blue-blue2, .line-blue-center-blue2{
     border-color: #b3d2fd !important;
   }
 
@@ -338,7 +340,7 @@
 /* >>>>PEACH<<<< */
 
 /* Line ok */
-.line-blue-peach, .line-blue-cen-peach{
+.line-blue-peach, .line-blue-center-peach{
     border-color: #f6c3b5 !important;
   }
 

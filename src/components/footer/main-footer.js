@@ -36,7 +36,7 @@ export class MainFooter extends Component {
     render() {
         return (
             <footer className="text-center">
-                <div className="stopka-1">
+                <div className="footer-1">
                     <div className="container">
                         <SectionHead title={this.state.footer.title} color={this.props.color}/>
                     </div>
@@ -46,7 +46,7 @@ export class MainFooter extends Component {
                         </div>
                     </div>
                 </div>
-                <div className={`text-center bg-primary bg-primary-${this.props.color} stopka-2`}>
+                <div className={`text-center bg-primary bg-primary-${this.props.color} footer-2`}>
                     <p>© Copyright Interaktywna Agencja Marketingowa Adssi</p>
                 </div>
             </footer>

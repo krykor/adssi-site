@@ -1,6 +1,7 @@
 [
     {
         "id": "strona-rzeznia",
+        "home": 1,
         "client": "Restauracja Stara Rzeźnia",
         "category": "Strona internetowa",
         "date": "Marzec 2017",
@@ -45,6 +46,7 @@
     },
     {
         "id":"profil-zamkowa",
+        "home": 2,
         "client":"Restauracja Zamkowa",
         "category":"Social media",
         "date": "Od listopada 2017",
@@ -240,6 +242,7 @@
     },
     {
         "id":"projekt-walentynkowy-zamkowa",
+        "home": 3,
         "client":"Restauracja Zamkowa",
         "category":"Projekt graficzny",
         "date": "Luty 2017",
@@ -279,6 +282,7 @@
     },
     {   
         "id":"sm-rzeznia",
+        "home": 6,
         "client":"Restauracja Stara Rzeźnia",
         "category":"Social media",
         "date": "Od listopada 2017",
@@ -387,6 +391,7 @@
     },
     {
         "id":"profil-orell",
+        "home": 4,
         "client":"Orell",
         "category":"Social media",
         "date": "Od marca 2017",
@@ -485,6 +490,7 @@
     },
     {
         "id":"kolacja-degustacyjna-rzeznia",
+        "home": 5,
         "client":"Restauracja Stara Rzeźnia",
         "category":"Projekt graficzny",
         "date": "Luty 2017",

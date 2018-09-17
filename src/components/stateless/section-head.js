@@ -6,7 +6,7 @@ export const SectionHead = ({title, content, color}) => {
         <div className="row">
             <div className="col-lg-12 text-center servises">
                 <h2>{title}</h2>
-                <hr className={`line-blue-cen line-blue-cen-${color} text-center`}/>
+                <hr className={`line-blue-center line-blue-center-${color} text-center`}/>
                 {content && content.map(item => <p key={item.id}>{item.text}</p>)}
             </div>
         </div>

@@ -25,7 +25,7 @@ export class Elements extends Component {
                             {this.state.ourWorks.imgDetails.map((item, index) => <p key={`${this.state.ourWorks.id}-img-${index}`}><img src={item.src} width="100%" alt={item.alt} title={item.title}/></p>)}
                         </div>
                         <div className="col-md-5">
-                            <div id="bb" className="sidebarportfolio">
+                            <div id="bb" className="sidebar-portfolio">
                                 <h2>{this.state.ourWorks.title}</h2>
                                 <hr className={`line-blue line-blue-${this.state.colors}`}/>
                                 <p>{this.state.ourWorks.description}</p>

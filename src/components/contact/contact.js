@@ -34,14 +34,14 @@ export class Contact extends Component {
         return (
             <div style={{backgroundColor: '#abebeb'}}>
                 <div>
-                    <div className="img-kontakt">
+                    <div className="img-contact">
                         <img width="100%" src="http://adssi.pl/img/kontakt-1.jpg" alt="Menu walentynkowe" title="Menu walentynkowe dla Restauracji Zamkowej"/>
-                        <div className="img-tekst">
+                        <div className="img-text">
                             <h3>SKONTAKTUJ SIĘ Z NAMI</h3>
                         </div>
                     </div>
                 </div>
-                <div className="bg-color-jasny">
+                <div className="bg-color-bright">
                     <div id="uslugi" className="container text-center">
                         <div className="row">
                             <OfferComponentLeft 
