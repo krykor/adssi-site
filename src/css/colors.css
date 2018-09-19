@@ -23,7 +23,7 @@
   }
 
 /* List & primary color */
-.text-primary-rose, .list-check-rose li:before{
+.text-primary-rose, .list-check-rose li i{
   color: #eac6d1 !important;
 }
 
@@ -69,7 +69,7 @@
   }
 
 /* List & primary color */
-.text-primary-purple, .list-check-purple li:before{
+.text-primary-purple, .list-check-purple li i{
   color: #c0a6ff !important;
 }
 
@@ -115,7 +115,7 @@
   }
 
 /* List & primary color */
-.text-primary-pink, .list-check-pink li:before{
+.text-primary-pink, .list-check-pink li i{
   color: #ffdff8 !important;
 }
 
@@ -161,7 +161,7 @@
   }
 
 /* List & primary color */
-.text-primary-mint, .list-check-mint li:before{
+.text-primary-mint, .list-check-mint li i{
   color: #cfedeb !important;
 }
 
@@ -207,7 +207,7 @@
   }
 
 /* List & primary color */
-.text-primary-green, .list-check-green li:before{
+.text-primary-green, .list-check-green li i{
   color: #95f4ba !important;
 }
 
@@ -253,7 +253,7 @@
   }
 
 /* List & primary color */
-.text-primary-blue, .list-check-blue li:before{
+.text-primary-blue, .list-check-blue li i{
   color: #abebeb !important;
 }
 
@@ -299,7 +299,7 @@
   }
 
 /* List & primary color */
-.text-primary-blue2, .list-check-blue2 li:before{
+.text-primary-blue2, .list-check-blue2 li i{
   color: #b3d2fd !important;
 }
 
@@ -345,7 +345,7 @@
   }
 
 /* List ok & primary color */
-.text-primary-peach, .list-check-peach li:before{
+.text-primary-peach, .list-check-peach li i{
   color: #f6c3b5 !important;
 }
 

@@ -286,7 +286,7 @@ p {
 
 .carousel-caption {
     color: #000 !important;
-    /* napis na slajderze h3 */
+    /* h3 */
     padding-bottom: 30%;
     text-shadow: none;
 }
@@ -309,7 +309,7 @@ p {
 
     .carousel-caption {
         color: #000 !important;
-        /* napis na slajderze h3 */
+        /* h3 */
         padding-bottom: 25%;
     }
 
@@ -456,11 +456,8 @@ p {
 
 /* >>> PORTFOLIO LIST <<< */
 
-.list-check li:before {
-    content: "\f00c";
-    font-family: FontAwesome;
+.list-check li i {
     font-style: normal;
-    font-weight: normal;
     text-decoration: inherit;
     padding-right: 5px;
     color: #abebeb;
@@ -475,7 +472,7 @@ p {
     font-weight: bold;
 }
 
-/* >>> PORTFOLIO LIST <<< */
+/* >>> PORTFOLIO SIDEBAR <<< */
 .portfolio-site {
     margin-top: 100px;
     min-height: 650px;
@@ -571,7 +568,7 @@ p {
 }
 
 .social-o h3,
-.list-check-social li:before {
+.list-check-social-o li i {
     color: #b3d2fd;
 }
 
@@ -590,7 +587,7 @@ p {
 }
 
 .web-o h3,
-.list-check-web li:before {
+.list-check-web-o li i {
     color: #cfedeb;
 }
 
@@ -609,7 +606,7 @@ p {
 }
 
 .graphic-o h3,
-.list-check-graphic li:before {
+.list-check-graphic-o li i {
     color: #eac6d1;
 }
 
@@ -628,7 +625,7 @@ p {
 }
 
 .photo-o h3,
-.list-check-photo li:before {
+.list-check-photo-o li i {
     color: #95f4ba;
 }
 

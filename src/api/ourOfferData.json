@@ -3,7 +3,7 @@
     "title": "SOCIAL MEDIA",
     "text": "Obecność Twojej firmy w mediach społecznościowych jest niezwykle istotna. Masz niespotykaną możliwość pokazania swojej firmy dla ogromnego grona odbiorców, zwiększenia świadomości marki, poznania klientów oraz ich oczekiwań. Pomożemy Ci w doborze odpowiednich serwisów, doradzimy, które sprawdzą się najlepiej w Twojej branży i będą skuteczne.",
     "list": ["kreowanie wizerunku zgodnego z marką", "pozyskiwanie odbiorców", "pisanie angażujących wpisów", "monitoring marki", "koordynacja promocji"],
-    "src": "http://adssi.pl/img/portfolio/social/l/sm-l-2.jpg",
+    "src": "https://adssi.pl/img/portfolio/social/l/sm-l-2.jpg",
     "imgAlt": "Facebook L by Iv",
     "btnClass": "btn-social"
 }, {
@@ -11,7 +11,7 @@
     "title": "WEB DESIGN",
     "text": "Wdrażamy nowoczesne, przejrzyste oraz responsywne strony internetowe, które na dłużej zatrzymują Klientów. Jest to możliwe dzięki wykorzystaniu techniki zorientowanej na użytkownika, dzięki której korzystanie z Twojej strony jest intuicyjne. Zapewnimy Ci obsługę graficzną, przygotujemy unikalne i przyjazne teksty SEO.",
     "list": ["intuicyjność i responsywność", "wsparcie graficzne", "tworzenie atrakcyjnych treści", "dopasowany system zarządzania treścią", "przygotowanie tekstów przyjaznych SEO"],
-    "src": "http://adssi.pl/img/portfolio/strony/rzeznia/strona-rzezni-1.jpg",
+    "src": "https://adssi.pl/img/portfolio/strony/rzeznia/strona-rzezni-1.jpg",
     "imgAlt": "Strona Restauracji Stara Rzeźnia",
     "btnClass": "btn-web"
 }, {
@@ -19,7 +19,7 @@
     "title": "GRAPHIC DESIGN",
     "text": "Pragniesz zaprezentować swoją nową ofertę w ciekawy sposób lub pokazać czym się zajmujesz? Zadbamy, by informacje, które chcesz przekazać były przejrzyste oraz czytelne. Zaproponujemy Ci kilka możliwości i wspólnie ustalimy szczegóły projektu, by nadać mu unikatowy charakter.",
     "list": ["opracowanie graficzne", "wizualizacja projektu", "wybór kolorystyki, kroju pisma", "zachowanie spójności", "unikatowy charakter"],
-    "src": "http://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/menu-4.jpg",
+    "src": "https://adssi.pl/img/portfolio/projekt-walentynki/zamkowa/menu-4.jpg",
     "imgAlt": "Menu walentynkowe dla Restauracji Zamkowej",
     "btnClass": "btn-graphic"
 }, {
@@ -27,7 +27,7 @@
     "title": "PHOTO",
     "text": "Nawet najlepiej napisany tekst nie jest w stanie ukazać wszystkich zalet Twojej usługi. Treści graficzne stanowią doskonałe dopełnienie i pozwalają dotrzeć bezpośrednio do Klienta. Możesz wykorzystać ten przekaz, by budować wizerunek marki w świadomości odbiorców. Promowanie produktów oraz usług przez obraz jest skuteczne i dostarcza większej ilości informacji.",
     "list": ["sesje produktowe / usługowe", "edycja materiałów", "zarządzanie zawartością grafik", "obsługa platform bazujących na zdjęciach", "promowanie kampanii opartych na treściach graficznych"],
-    "src": "http://adssi.pl/img/portfolio/sesje/photo.jpg",
+    "src": "https://adssi.pl/img/portfolio/sesje/photo.jpg",
     "imgAlt": "Sesja w Restauracji Zamkowa",
     "btnClass": "btn-photo"
 }]

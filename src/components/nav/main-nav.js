@@ -12,7 +12,7 @@ export const MainNav = (props) => {
                         <span className={`icon-bar icon-bar-${props.color}`}></span>
                     </button>
                     <Link to="/" className="navbar-brand" onClick={() => props.setColors('home')}>
-                        <img src="https:adssi.pl/img/loga/slicestrona2.png" height="30px" alt="Logo"/>
+                        <img src="https://adssi.pl/img/loga/slicestrona2.png" height="30px" alt="Logo"/>
                     </Link>
                 </div>
                 <div className="collapse navbar-collapse" id="myNavbar">

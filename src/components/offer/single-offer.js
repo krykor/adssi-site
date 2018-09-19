@@ -8,7 +8,7 @@ export const SingleOffer = ({ ourOffer }) => {
         <div className="col-md-6">
             <h3>{ourOffer.title}</h3>
             <p>{ourOffer.text}</p>
-            {<ul className="list-check list-check-social">{ourOffer.list.map((item, index) => <li key={`${ourOffer.id}-${index}`}>{item}</li>)}</ul>}
+            {<ul className={`list-check list-check-${ourOffer.id}`}>{ourOffer.list.map((item, index) => <li key={`${ourOffer.id}-${index}`}><i className="fas fa-check"> </i>{item}</li>)}</ul>}
             <Button link="/portfolio" text="Sprawdź" buttonClass={ourOffer.btnClass} />
         </div>
     )

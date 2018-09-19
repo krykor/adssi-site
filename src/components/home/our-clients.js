@@ -12,19 +12,19 @@ export class OurClients extends Component {
             ourClients: [
                 {
                     id: 'Restauracja Stara Rzeźnia',
-                    src: 'https:adssi.pl/img/loga/stara-rzeznia.png',
+                    src: 'https://adssi.pl/img/loga/stara-rzeznia.png',
                 },
                 {
                     id: 'Restauracja Zamkowa',
-                    src: 'https:adssi.pl/img/loga/zamkowa.png',
+                    src: 'https://adssi.pl/img/loga/zamkowa.png',
                 },
                 {
                     id: 'Usługi Kominiarskie Orell',
-                    src: 'https:adssi.pl/img/loga/orell.png',
+                    src: 'https://adssi.pl/img/loga/orell.png',
                 },
                 {
                     id: 'L by Iv',
-                    src: 'https:adssi.pl/img/loga/l.png',
+                    src: 'https://adssi.pl/img/loga/l.png',
                 }
             ]
         }

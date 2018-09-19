@@ -9,23 +9,23 @@ export class SliderContent extends Component {
         this.state = {
             slide: [
                 {
-                    src: 'https:adssi.pl/img/slider/zeszyt.jpg',
+                    src: 'https://adssi.pl/img/slider/zeszyt.jpg',
                     srcSet: `
-                    https:adssi.pl/img/slider/zeszyt.jpg 1920w, 
-                    https:adssi.pl/img/slider/zeszyt-300.jpg 300w, 
-                    https:adssi.pl/img/slider/zeszyt-768.jpg 768w, 
-                    https:adssi.pl/img/slider/zeszyt-1024.jpg 1024w, 
-                    https:adssi.pl/img/slider/zeszyt-600.jpg 600w`,
+                    https://adssi.pl/img/slider/zeszyt.jpg 1920w, 
+                    https://adssi.pl/img/slider/zeszyt-300.jpg 300w, 
+                    https://adssi.pl/img/slider/zeszyt-768.jpg 768w, 
+                    https://adssi.pl/img/slider/zeszyt-1024.jpg 1024w, 
+                    https://adssi.pl/img/slider/zeszyt-600.jpg 600w`,
                     alt: 'Slide 1'
                 },
                 {
-                    src: 'https:adssi.pl/img/slider/laptop.jpg',
+                    src: 'https://adssi.pl/img/slider/laptop.jpg',
                     srcSet: `
-                    https:adssi.pl/img/slider/laptop.jpg 1920w, 
-                    https:adssi.pl/img/slider/laptop-300.jpg 300w, 
-                    https:adssi.pl/img/slider/laptop-768.jpg 768w, 
-                    https:adssi.pl/img/slider/laptop-1024.jpg 1024w, 
-                    https:adssi.pl/img/slider/laptop-600.jpg 600w`,
+                    https://adssi.pl/img/slider/laptop.jpg 1920w, 
+                    https://adssi.pl/img/slider/laptop-300.jpg 300w, 
+                    https://adssi.pl/img/slider/laptop-768.jpg 768w, 
+                    https://adssi.pl/img/slider/laptop-1024.jpg 1024w, 
+                    https://adssi.pl/img/slider/laptop-600.jpg 600w`,
                     alt: 'Slide 1'
                 },
             ],

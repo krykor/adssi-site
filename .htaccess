@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} react.adssi.pl
+RewriteCond "%{THE_REQUEST}" "^.*/index\.(php|htm|html) " [NC]
+RewriteRule ^(.*)index\.(php|htm|html)$ https://react.adssi.pl/$1 [R=301,NC,L]
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} react.adssi\.pl$ [NC]
+RewriteRule .* https://react.adssi.pl%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} www\.react.adssi\.pl$ [NC]
+RewriteRule .* https://react.adssi.pl%{REQUEST_URI} [R=301,L]
+</IfModule>
