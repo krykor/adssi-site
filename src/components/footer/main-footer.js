@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { SectionHead } from '../stateless/section-head';
 import { FooterDetails } from './footer-details'
 

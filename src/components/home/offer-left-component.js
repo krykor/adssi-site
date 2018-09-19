@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
+
 import { Button } from '../stateless/button'
 
 export const OfferComponentLeft = (props) => {
@@ -12,3 +14,10 @@ export const OfferComponentLeft = (props) => {
         </div>
     )
 }
+
+OfferComponentLeft.propTypes = {
+    title: PropTypes.string.isRequired,
+    p1: PropTypes.string,
+    p2: PropTypes.string,
+    buttonLink: PropTypes.string,
+};

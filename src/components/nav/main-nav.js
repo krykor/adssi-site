@@ -20,7 +20,7 @@ export const MainNav = (props) => {
                         <li><Link to="/oferta" onClick={() => props.setColors('home')}>Oferta</Link></li>
                         <li><Link to="/portfolio" onClick={() => props.setColors('home')}>Portfolio</Link></li>
                         <li><Link to="/kontakt" onClick={() => props.setColors('home')}>Kontakt</Link></li>
-                        <li><a href="https://www.facebook.com/AdssiAgency/"><i className="fab fa-facebook-square fa-lg" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.facebook.com/AdssiAgency/"><i className="fab fa-facebook-square fa-lg" aria-hidden="true"></i> </a></li>
                     </ul>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { OfferComponent } from './offer-component';
 import { OfferComponentLeft } from './offer-left-component';
 
-export class HomeOffer extends Component {
+export class OfferHome extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -46,6 +46,13 @@ export class HomeOffer extends Component {
             ]
         }
     }
+
+    OfferComponentRender = (x) => {
+        return(
+            <OfferComponent title={x.title} key={x.id} text={x.text} icon={x.icon} divClass={x.divClass} id={x.id}/>
+        )
+    }
+
     render() {
         return (
             <div className="bg-color-bright">
@@ -58,10 +65,10 @@ export class HomeOffer extends Component {
                             buttonLink="/oferta"/>
                         <div className="col-sm-7 col-sm-offset-1">
                             <div className="row">
-                                {this.state.offerComponentV1.map(x => <OfferComponent title={x.title} key={x.id} text={x.text} icon={x.icon} divClass={x.divClass}/>)}
+                                {this.state.offerComponentV1.map(x => this.OfferComponentRender(x))}
                             </div>
                             <div className="row">
-                                {this.state.offerComponentV2.map(x => <OfferComponent title={x.title} key={x.id} text={x.text} icon={x.icon} divClass={x.divClass}/>)}
+                                {this.state.offerComponentV2.map(x => this.OfferComponentRender(x))}
                             </div>
                         </div>
                     </div>

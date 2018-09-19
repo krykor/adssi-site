@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Slider } from './slider'
-import { HomeOffer } from './home-offer'
+import { OfferHome } from './offer-home'
 import { OurWorks } from './our-works'
 import { OurClients } from './our-clients'
 
@@ -9,7 +9,7 @@ export const Home = () => {
     return (
         <div>
             <Slider/>
-            <HomeOffer/>
+            <OfferHome/>
             <OurWorks/>
             <OurClients/>
         </div>

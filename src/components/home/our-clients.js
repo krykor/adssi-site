@@ -29,6 +29,7 @@ export class OurClients extends Component {
             ]
         }
     }
+    
     render() {
         return (
             <section className="bg-color-white">

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+
 import { OurWorksElement } from './our-works-element'
 import { Button } from '../stateless/button'
 import { SectionHead } from '../stateless/section-head'
+
 import  ourWorksData  from '../../api/ourWorksData.json'
 
 export class OurWorks extends Component {
@@ -24,11 +26,13 @@ export class OurWorks extends Component {
             ourWorks: []
         }
     }
+
     componentDidMount() {
         this.setState(
             { ourWorks: ourWorksData } 
         )
     }
+    
     render() {
         return (
             <section id="portfolio" className="bg-color-white">

@@ -54,7 +54,8 @@ export class Contact extends Component {
                                     {this.state.contactComponentForm.map(x =>
                                         <OfferComponent 
                                             title={x.title} 
-                                            key={x.id} 
+                                            key={x.id}
+                                            id={x.id}
                                             text={x.text} 
                                             icon={x.icon} 
                                             divClass={x.divClass}/>

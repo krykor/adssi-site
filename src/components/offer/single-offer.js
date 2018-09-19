@@ -1,4 +1,6 @@
 import React from 'react'
+import { PropTypes } from 'prop-types';
+
 import { Button } from '../stateless/button'
 
 export const SingleOffer = ({ ourOffer }) => {
@@ -11,3 +13,13 @@ export const SingleOffer = ({ ourOffer }) => {
         </div>
     )
 }
+
+SingleOffer.propTypes = {
+    ourOffer: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired,
+        list: PropTypes.array,
+        grid: PropTypes.string,
+    }),
+};

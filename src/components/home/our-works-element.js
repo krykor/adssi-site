@@ -1,5 +1,7 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom'
+
 
 export const OurWorksElement = (props) => {
     return (
@@ -11,9 +13,17 @@ export const OurWorksElement = (props) => {
                         <p>{props.category.toUpperCase()}</p>
                     </div>
                 </div>
-                <img src={props.src} className="img-responsive" alt={props.alt}></img>
+                <img src={props.src} className="img-responsive" alt={props.imgAlt}></img>
             </Link>
         </div>
     )
-} 
-    
+}
+
+OurWorksElement.propTypes = {
+    group: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    client: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
+    imgAlt: PropTypes.string.isRequired
+};

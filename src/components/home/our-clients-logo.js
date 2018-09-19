@@ -15,5 +15,8 @@ export const OurClientsLogo = ({ourClients}) => {
 }
 
 OurClientsLogo.propTypes = {
-    ourClients: PropTypes.objectOf(PropTypes.string.isRequired) 
+    ourClients: PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        id: PropTypes.string.isRequired
+    }), 
 }

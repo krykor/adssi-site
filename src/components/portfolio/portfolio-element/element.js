@@ -41,7 +41,6 @@ export class Elements extends Component {
                                 {this.state.ourWorks.btnDetails && this.state.ourWorks.btnDetails.map((item, index) => <Button 
                                     link={item.link}
                                     text={item.text}
-                                    /* textAlign={item.textAlign} */
                                     grid="col-sm-6"
                                     key={`${this.state.ourWorks.id}-button-${index}`}
                                     buttonClass={`btn-primary-${this.state.colors}`}

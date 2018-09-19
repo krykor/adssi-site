@@ -36,7 +36,6 @@ class App extends Component {
               <Route exact path="/oferta" component={Offer} />
               <Route exact path="/portfolio" component={Portfolio}/>
               <Route exact path="/kontakt" component={Contact} />
-
               <Route path="/portfolio/:user" render={(props) => <Elements {...props}  colors={x => this.setColors(x)}/>} />}
             </Switch>
           </div>

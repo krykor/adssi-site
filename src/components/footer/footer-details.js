@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export const FooterDetails = ({details, color}) => {
     return(
@@ -8,3 +9,13 @@ export const FooterDetails = ({details, color}) => {
         </div>  
     )
 }
+
+FooterDetails.propTypes = {
+    details: PropTypes.shape({
+        classElement: PropTypes.string.isRequired,
+        icon: PropTypes.string.isRequired,
+        href: PropTypes.string.isRequired,
+        contact: PropTypes.string.isRequired,
+    }),
+    color: PropTypes.string.isRequired,
+};

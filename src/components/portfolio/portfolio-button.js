@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 export const PortfolioButton = (props) => {
     return (
@@ -16,3 +17,13 @@ export const PortfolioButton = (props) => {
         </div>
     )
 }
+
+PortfolioButton.propTypes = {
+    index: PropTypes.number.isRequired,
+    buttonLength: PropTypes.number.isRequired,
+    handleClick: PropTypes.func.isRequired,
+    button: PropTypes.shape({
+        filter: PropTypes.string,
+        text: PropTypes.string.isRequired,
+    }),
+};
