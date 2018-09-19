@@ -1,4 +1,6 @@
-/* >>> COLORS <<< */
+/* >>> COLORS & FONT <<< */
+@import url('https://fonts.googleapis.com/css?family=Hind&subset=latin-ext');
+
 body {
     font-family: 'Hind', sans-serif;
     background-color: #fff;
