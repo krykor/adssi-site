@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export const MainNav = (props) => {
     return (
         <nav className={`navbar navbar-inverse navbar-inverse-${props.color} navbar-fixed-top ${props.color !== "home" ? 'affix-top-color' : ''}`} data-spy={props.navClass} data-offset-top="10">
@@ -20,7 +22,7 @@ export const MainNav = (props) => {
                         <li><Link to="/oferta" onClick={() => props.setColors('home')}>Oferta</Link></li>
                         <li><Link to="/portfolio" onClick={() => props.setColors('home')}>Portfolio</Link></li>
                         <li><Link to="/kontakt" onClick={() => props.setColors('home')}>Kontakt</Link></li>
-                        <li><a href="https://www.facebook.com/AdssiAgency/" alt="Facebook" title="Nasz Facebook"><i className="fab fa-facebook-square fa-lg" aria-hidden="true"></i> </a></li>
+                        <li><a href="https://www.facebook.com/AdssiAgency/" alt="Facebook" title="Nasz Facebook"><FontAwesomeIcon icon={['fab', 'facebook']} size="lg"/></a></li>
                     </ul>
                 </div>
             </div>

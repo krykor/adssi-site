@@ -17,14 +17,14 @@ export class OfferHome extends Component {
                     id: 'test11',
                     title: 'Social media',
                     text: 'kreujemy wizerunek zgodny z marką, angażujemy, monitorujemy i koordynujemy wszelkie działania',
-                    icon: 'fa-users',
+                    icon: 'users',
                     divClass: 'sr1'
                 },
                 {
                     id: 'test12',
                     title: 'Kampanie reklamowe',
                     text: 'opracowywanie strategii kampanii i jej optymalizacja to nieodłączny element marketingu',
-                    icon: 'fa-lightbulb',
+                    icon: 'lightbulb',
                     divClass: 'sr1'
                 }
             ],
@@ -33,14 +33,14 @@ export class OfferHome extends Component {
                     id: 'test21',
                     title: 'video & foto',
                     text: 'fotografujemy, nagrywamy i edytujemy, by pokazać atuty Twojego produktu, usługi i całej marki',
-                    icon: 'fa-camera',
+                    icon: 'camera',
                     divClass: 'sr12'
                 },
                 {
                     id: 'test22',
                     title: 'Strony www',
                     text: 'zadbamy by Twoja strona internetowa była responsywna, intuicyjna i zatrzymywała klientów na dłużej',
-                    icon: 'fa-laptop',
+                    icon: 'laptop',
                     divClass: 'sr12'
                 }
             ]

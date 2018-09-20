@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import { Button } from '../../stateless/button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import  ourWorksData  from '../../../api/ourWorksData.json'
 
@@ -30,7 +31,10 @@ export class Elements extends Component {
                                 <hr className={`line-blue line-blue-${this.state.colors}`}/>
                                 <p>{this.state.ourWorks.description}</p>
                                 <ul className={`list-check list-check-${this.state.colors}`} title="Działania">
-                                    {this.state.ourWorks.list.map((item, index)=> <li key={`${this.state.ourWorks.id}-list-${index}`}><i className="fas fa-check"> </i>{item}</li>)}
+                                    {this.state.ourWorks.list.map((item, index)=> 
+                                        <li key={`${this.state.ourWorks.id}-list-${index}`}>
+                                            <FontAwesomeIcon icon="check"/> {item}
+                                        </li>)}
                                 </ul>
                                 <hr/>
                                 <div className="list-info">

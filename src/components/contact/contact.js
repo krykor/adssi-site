@@ -17,14 +17,14 @@ export class Contact extends Component {
                     id: 'test111',
                     title: 'messenger',
                     text: 'Wejdź do aplikacji Messenger w swoim telefonie lub tablecie, skieruj aparat na nasz kod Czekamy na Twoją wiadomość!',
-                    icon: 'fa-users',
+                    icon: 'users',
                     divClass: 'sr1'
                 },
                 {
                     id: 'test122',
                     title: 'e-mail lub telefon',
                     text: 'Napisz do nas maila lub zadzwoń - jak Ci wygodniej. Odpowiemy na Twoje pytania i przedstawimy możliwości.',
-                    icon: 'fa-lightbulb',
+                    icon: 'lightbulb',
                     divClass: 'sr1'
                 }
             ],

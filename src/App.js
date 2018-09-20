@@ -11,6 +11,7 @@ import { Elements } from './components/portfolio/portfolio-element/element'
 
 import './api/ourWorksData.json'
 import './css/colors.css'
+import './components/font-awesome/fontAwesome'
 
 class App extends Component {
   constructor(props) {

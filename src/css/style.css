@@ -463,7 +463,7 @@ p {
 
 /* >>> PORTFOLIO LIST <<< */
 
-.list-check li i {
+.list-check svg {
     font-style: normal;
     text-decoration: inherit;
     padding-right: 5px;
@@ -575,7 +575,7 @@ p {
 }
 
 .social-o h3,
-.list-check-social-o li i {
+.list-check-social-o svg {
     color: #b3d2fd;
 }
 
@@ -594,7 +594,7 @@ p {
 }
 
 .web-o h3,
-.list-check-web-o li i {
+.list-check-web-o svg {
     color: #cfedeb;
 }
 
@@ -613,7 +613,7 @@ p {
 }
 
 .graphic-o h3,
-.list-check-graphic-o li i {
+.list-check-graphic-o svg {
     color: #eac6d1;
 }
 
@@ -632,7 +632,7 @@ p {
 }
 
 .photo-o h3,
-.list-check-photo-o li i {
+.list-check-photo-o svg {
     color: #95f4ba;
 }
 
