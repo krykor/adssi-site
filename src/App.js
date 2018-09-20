@@ -21,6 +21,8 @@ class App extends Component {
     }
   }
 
+  componentDidUpdate() {window.scrollTo(0,0)}
+
   setColors(x) {this.setState({ colors: x})} 
 
   render() {

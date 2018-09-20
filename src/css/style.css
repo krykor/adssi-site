@@ -486,14 +486,16 @@ p {
 }
 
 .sidebar-portfolio {
-    position: fixed;
+    position: sticky;
     width: 450px;
+    top: 100px;
 }
 
 @media (max-width: 1200px) {
     .sidebar-portfolio {
-        position: fixed;
+        position: sticky;
         width: 374px;
+        top: 100px;
     }
 }
 
