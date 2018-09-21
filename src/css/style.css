@@ -219,7 +219,7 @@ p {
 }
 
 .navbar-fixed-top {
-    position: relative;
+    position: fixed;
 }
 
 @media (min-width:768px) {
@@ -373,12 +373,14 @@ p {
 
 .carousel-control {
     color: #abebeb;
-    display: none;
 }
 
 .carousel-control:hover,
 .carousel-control:focus {
     opacity: none !important;
+}
+.right.carousel-control, .left.carousel-control {
+    background: none !important;
 }
 
 /* >>> PORTFOLIO <<< */
@@ -501,7 +503,7 @@ p {
 
 @media (max-width: 994px) {
     .sidebar-portfolio {
-        position: relative;
+        position: inherit;
         width: auto !important;
     }
 }

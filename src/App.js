@@ -17,23 +17,38 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        colors: "home"
+        colors: "home",
+        dropdown: false
     }
+    this.hideMenu = this.hideMenu.bind(this)
   }
 
-  componentDidUpdate() {window.scrollTo(0,0)}
+  componentDidUpdate() {
+    document.getElementById('myNavbar').classList.remove('in')
+  }
 
-  setColors(x) {this.setState({ colors: x})} 
+  setColors(x) {
+    this.setState({ colors: x})
+    window.scrollTo(0,0)
+  }
+
+  hideMenu() {
+    /* let menuDropdown = document.getElementById('myNavbar')
+    menuDropdown.classList.remove('in')
+
+    console.log(menuDropdown) */
+
+    this.setState({ dropdown: true })
+  }
 
   render() {
-    
     return (
       <Router>
         <div className="App">
           <header className="App-header">
             <MainNav navClass="affix" color={this.state.colors} setColors={x => this.setColors(x)}/> 
           </header>
-          <div>
+          <div onClick={this.hideMenu}>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/oferta" component={Offer} />
