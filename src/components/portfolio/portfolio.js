@@ -63,7 +63,7 @@ export class Portfolio extends Component {
     }
     render() {
         return (
-            <section id="portfolio" className="bg-color-white portfolio-grid">
+            <div id="portfolio" className="main-margin">
                 <div className="container">
                     <div className="row">
                         <SectionHead 
@@ -91,7 +91,7 @@ export class Portfolio extends Component {
                                 imgAlt={x.imgAlt}/>)}
                     </div>
                 </div>
-            </section>
+            </div>
         )
     }
 }

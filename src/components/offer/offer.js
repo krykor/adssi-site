@@ -32,8 +32,8 @@ export class Offer extends Component {
         ]
 
         return (
-            <div className="container-fluit">
-                <div className="container offer-margin">
+            <div className="container-fluit main-margin">
+                <div className="container">
                     {this.state.ourOffer.map((item, index) => 
                         <div className={`row offer ${item.id} sr4`} key={`${item.id}-div`}>
                             {index % 2 === 0 ? (offerArray(item)) : (offerArray(item).reverse())}

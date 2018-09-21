@@ -8,6 +8,16 @@ body {
     font-size: 16px;
 }
 
+.main-margin {
+    margin: 50px auto
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 50px auto
+    }
+}
+
 p {
     font-size: 16px;
 }
@@ -33,7 +43,7 @@ p {
 
 .bg-color-white {
     background-color: #fff;
-    padding-top: 25px;
+    padding-top: 25px; 
     padding-bottom: 25px;
 }
 
@@ -219,7 +229,7 @@ p {
 }
 
 .navbar-fixed-top {
-    position: fixed;
+    position: fixed!important;
 }
 
 @media (min-width:768px) {
@@ -247,12 +257,12 @@ p {
     }
 }
 
-#portfolio {
+/* #portfolio {
     padding-top: 50px;
     margin-top: -50px;
     -webkit-background-clip: content-box;
     background-clip: content-box;
-}
+} */
 
 /* slider portfolio 
 .carousel-inner-potfolio {
@@ -283,7 +293,6 @@ p {
     -ms-filter: blur(6px);
     filter: blur(6px);
     width: 100%;
-    /* Set width to 100% */
     margin: auto;
 }
 
@@ -293,7 +302,6 @@ p {
 
 .carousel-caption {
     color: #000 !important;
-    /* h3 */
     padding-bottom: 30%;
     text-shadow: none;
 }
@@ -316,7 +324,6 @@ p {
 
     .carousel-caption {
         color: #000 !important;
-        /* h3 */
         padding-bottom: 25%;
     }
 
@@ -384,10 +391,6 @@ p {
 }
 
 /* >>> PORTFOLIO <<< */
-.portfolio-grid {
-    margin-top: 30px !important;
-}
-
 #portfolio .portfolio-item {
     margin: 0 0 15px;
     right: 0;
@@ -508,19 +511,6 @@ p {
     }
 }
 
-/*
-.zmianap {
-    position: relative !important;
-}
-
-@media (max-width: 994px) {
-    .zmianap {
-        position: relative !important;
-        top: auto !important;
-    }
-}
-*/
-
 /* >>> LOGO <<< */
 .logo {
     -webkit-filter: grayscale(100%);
@@ -561,11 +551,6 @@ p {
 }
 
 /* >>> OFFER <<< */
-.offer {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
 .offer-margin {
     margin-top: 10px;
 }
@@ -740,7 +725,7 @@ p {
     }
 
     .img-text {
-        top: 100px;
+        top: 50px;
         left: 45%;
     }
 }
@@ -751,18 +736,18 @@ p {
     }
 
     .img-text {
-        top: 80px;
+        top: 20px;
         left: 45%;
     }
 }
 
 @media (max-width: 320px) {
     .img-text h3 {
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
 
     .img-text {
-        top: 60px;
+        top: 5px;
         left: 45%;
     }
 }

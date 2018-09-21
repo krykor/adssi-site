@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types'
 
 export const SectionHead = ({title, content, color}) => {
     return (
-        <div className="row">
+        <div>
             <div className="col-lg-12 text-center servises">
                 <h2>{title}</h2>
                 <hr className={`line-blue-center line-blue-center-${color} text-center`}/>

@@ -32,14 +32,7 @@ class App extends Component {
     window.scrollTo(0,0)
   }
 
-  hideMenu() {
-    /* let menuDropdown = document.getElementById('myNavbar')
-    menuDropdown.classList.remove('in')
-
-    console.log(menuDropdown) */
-
-    this.setState({ dropdown: true })
-  }
+  hideMenu() {this.setState({ dropdown: true })}
 
   render() {
     return (
@@ -48,7 +41,7 @@ class App extends Component {
           <header className="App-header">
             <MainNav navClass="affix" color={this.state.colors} setColors={x => this.setColors(x)}/> 
           </header>
-          <div onClick={this.hideMenu}>
+          <main onClick={this.hideMenu}>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/oferta" component={Offer} />
@@ -56,7 +49,7 @@ class App extends Component {
               <Route exact path="/kontakt" component={Contact} />
               <Route path="/portfolio/:user" render={(props) => <Elements {...props}  colors={x => this.setColors(x)}/>} />}
             </Switch>
-          </div>
+          </main>
           <MainFooter color={this.state.colors}/>
         </div>
       </Router>
