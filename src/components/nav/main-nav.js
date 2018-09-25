@@ -8,7 +8,7 @@ export const MainNav = (props) => {
         <nav className={`navbar navbar-inverse navbar-inverse-${props.color} navbar-fixed-top ${props.color !== "home" ? 'affix-top-color' : ''}`} data-spy={props.navClass} data-offset-top="10">
             <div className="container">
                 <div className="navbar-header">
-                    <button type="button" className={`navbar-toggle navbar-toggle-${props.color}`} data-toggle="collapse" data-target="#myNavbar">
+                    <button type="button" className={`navbar-toggle navbar-toggle-${props.color}`} data-toggle="collapse" data-target="#myNavbar" onClick={props.toggleMobileMenu}>
                         <span className={`icon-bar icon-bar-${props.color}`}></span>
                         <span className={`icon-bar icon-bar-${props.color}`}></span>
                         <span className={`icon-bar icon-bar-${props.color}`}></span>

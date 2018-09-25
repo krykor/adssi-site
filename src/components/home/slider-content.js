@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import { Button } from '../stateless/button'
 import { SliderImg } from './slider-img'
 
+import Slide from 'react-reveal/Slide'
+
 export class SliderContent extends Component {
     constructor(props) {
         super(props);
@@ -38,19 +40,23 @@ export class SliderContent extends Component {
                     <SliderImg slide={this.state.slide[0]}/>
                     <div className="container carousel-caption">
                         <div className="row">
-                            <div className="col-sm-12 col-sm-offset0 text-left sr1222">
-                                <h3>Marketing <span className="text-primary">mówi </span> do ludzi</h3>
-                                <h3>Content marketing z nimi <span className="text-primary">rozmawia</span></h3>
-                            </div>
+                            <Slide left cascade>
+                                <div className="col-sm-12 col-sm-offset0 text-left sr1222">
+                                    <h3>Marketing <span className="text-primary">mówi </span> do ludzi</h3>
+                                    <h3>Content marketing z nimi <span className="text-primary">rozmawia</span></h3>
+                                </div>
+                            </Slide>
                         </div>
                     </div>
                 </div>
                 <div className="item">
                     <SliderImg slide={this.state.slide[1]}/>
-                    <div className="carousel-caption text-right sr111">
-                        <h3 className="text-right">Komuniakcja jest <span className="text-primary">strategią.</span></h3>
-                        <Button link="/kontakt" textAlign="text-right" text="Napisz do nas" buttonClass="btn-slider"/>
-                    </div>
+                    <Slide left>
+                        <div className="carousel-caption text-right sr111">
+                            <h3 className="text-right">Komuniakcja jest <span className="text-primary">strategią.</span></h3>
+                            <Button link="/kontakt" textAlign="text-right" text="Napisz do nas" buttonClass="btn-slider"/>
+                        </div>
+                    </Slide>
                 </div>
             </div>
         )

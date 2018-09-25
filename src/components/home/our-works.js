@@ -44,14 +44,14 @@ export class OurWorks extends Component {
                 <div className="row">
                     {this.state.ourWorks.filter(item => item.home).sort((a, b) => a.home-b.home).map(x => 
                         <OurWorksElement 
-                            group={x.group} 
-                            key={x.id}
-                            id={x.id} 
-                            client={x.client} 
-                            category={x.category} 
-                            src={x.imgSrc} 
-                            imgAlt={x.imgAlt}/>)}
-                      
+                        group={x.group} 
+                        key={x.id}
+                        id={x.id} 
+                        client={x.client} 
+                        category={x.category} 
+                        src={x.imgSrc} 
+                        imgAlt={x.imgAlt}/>)}
+                        
                     <Button link='/portfolio'/>
                 </div>
             </div>

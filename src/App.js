@@ -20,28 +20,28 @@ class App extends Component {
         colors: "home",
         dropdown: false
     }
-    this.hideMenu = this.hideMenu.bind(this)
+    this.hideMenuClick = this.hideMenuClick.bind(this)
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this)
   }
 
-  componentDidUpdate() {
-    document.getElementById('myNavbar').classList.remove('in')
-  }
-
+  componentDidUpdate() { !this.state.dropdown && window.innerWidth < 768 && document.getElementById('myNavbar').classList.remove('in')}
+  
   setColors(x) {
-    this.setState({ colors: x})
+    this.setState({ colors: x, dropdown: false })
     window.scrollTo(0,0)
   }
 
-  hideMenu() {this.setState({ dropdown: true })}
+  hideMenuClick() { window.innerWidth < 768 && this.state.dropdown && this.setState({ dropdown: false }) }
+  toggleMobileMenu() { this.state.dropdown ? this.setState({ dropdown: false }) : this.setState({ dropdown: true }) }
 
   render() {
     return (
       <Router>
         <div className="App">
           <header className="App-header">
-            <MainNav navClass="affix" color={this.state.colors} setColors={x => this.setColors(x)}/> 
+            <MainNav navClass="affix" color={this.state.colors} setColors={x => this.setColors(x)} toggleMobileMenu={this.toggleMobileMenu}/> 
           </header>
-          <main onClick={this.hideMenu}>
+          <main onClick={this.hideMenuClick}>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/oferta" component={Offer} />
