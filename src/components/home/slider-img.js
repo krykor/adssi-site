@@ -1,12 +1,11 @@
 import React from 'react'
-import { PropTypes } from 'prop-types';
+import { PropTypes } from 'prop-types'
 
-export const SliderImg = (props) => {
-    return (
-        <img src={props.slide.src} width="1920" srcSet={props.slide.srcSet} alt="props.slide.alt"/>
-    )
+export const SliderImg = props => {
+	const { src, srcSet, alt } = props.slide
+	return <img src={src} width="1920" srcSet={srcSet} alt={alt} />
 }
 
 SliderImg.propTypes = {
-    slide: PropTypes.objectOf(PropTypes.string),
-};
+	slide: PropTypes.objectOf(PropTypes.string)
+}

@@ -6,12 +6,12 @@ import { OurWorks } from './our-works'
 import { OurClients } from './our-clients'
 
 export const Home = () => {
-    return (
-        <div>
-            <Slider/>
-            <OfferHome/>
-            <OurWorks/>
-            <OurClients/>
-        </div>
-    )
+	return (
+		<div>
+			<Slider />
+			<OfferHome />
+			<OurWorks />
+			<OurClients />
+		</div>
+	)
 }
