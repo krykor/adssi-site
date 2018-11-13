@@ -13,11 +13,15 @@ _ADSSI site_ - a simple commercial company Progressive Web Application (PWA) bas
 
 ### On Macbook
 
-![Hangman on a Macbook](/github/git.png?raw=true 'Hangman on a Macbook')
+![ADSSI on a Macbook](/github/ADSSI-3.png?raw=true 'ADSSI on a Macbook')
+
+![ADSSI on a Macbook](/github/ADSSI-2.png?raw=true 'ADSSI on a Macbook')
+
+![ADSSI on a Macbook](/github/ADSSI-1.png?raw=true 'ADSSI on a Macbook')
 
 ### On mobile
 
-![Hangman on a smartphone](/github/git2.png?raw=true 'Hangman on a smartphone')
+![ADSSI on a smartphone](/github/ADSSI-smart.jpg?raw=true 'ADSSI on a smartphone')
 
 ## Demo
 
@@ -46,11 +50,13 @@ Aplication is created with:
 - dynamically **segregated portfolio** by categories
 - **clear subpages** with company's projects
 - dynamic **selection of the main color** from the subpage of the project (eg in the navbar)
-- simple animations with \_react-frontawesome\_\_
+- simple animations with _react-frontawesome_
 - basic imitation of the database in JSON files
+- using _Bootstrap 3_ with _React_
 
 ## To-do list:
 
 - adding a database
 - adding Headless CMS
 - refresh the site with new projects and clients
+- optimization of photos and graphics using the webp format
